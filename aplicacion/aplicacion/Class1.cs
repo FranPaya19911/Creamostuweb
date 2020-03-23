@@ -10,7 +10,7 @@ namespace aplicacion
         
         static void Main()
         {
-            Console.WriteLine("hola");
+            Console.WriteLine("hola que tal");
         }
     }
 }
