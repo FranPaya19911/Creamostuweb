@@ -29,19 +29,15 @@ nav li {
     float: left;
 }
 
-    nav li a {
-        color: #656b6f;
-        text-decoration: none;
-        padding: 10px 15px;
-        display: block;
-    }
+nav li a {
+    color: #656b6f;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
 
-        nav li a:hover {
-            color: #1f1f1f;
-        }
-
-.active {
-    color: #00477A;
+nav li a:hover {
+    color: #1f1f1f;
 }
 
 header {
@@ -61,3 +57,5 @@ header {
     height: 80%;
     margin: 75px 10% 0px 10%;
 }
+
+
