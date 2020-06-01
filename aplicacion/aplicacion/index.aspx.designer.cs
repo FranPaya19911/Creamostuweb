@@ -15,6 +15,15 @@ namespace aplicacion
     {
 
         /// <summary>
+        /// Control cabezera.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::aplicacion.cabezera cabezera;
+
+        /// <summary>
         /// Control form1.
         /// </summary>
         /// <remarks>
@@ -24,12 +33,12 @@ namespace aplicacion
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control Header.
+        /// Control Footer.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::aplicacion.Header;
+        protected global::aplicacion.Footer Footer;
     }
 }
