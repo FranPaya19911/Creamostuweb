@@ -73,6 +73,7 @@
     </Content>
     <Content Include="cabezera.ascx" />
     <Content Include="Footer.ascx" />
+    <Content Include="general.css" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
   </ItemGroup>
