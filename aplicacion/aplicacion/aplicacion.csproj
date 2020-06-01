@@ -67,12 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\DBCreamostuweb.mdf" />
+    <Content Include="App_Data\DBCreamostuweb_log.ldf">
+      <DependentUpon>DBCreamostuweb.mdf</DependentUpon>
+    </Content>
     <Content Include="Footer.ascx" />
     <Content Include="Header.ascx" />
-    <Content Include="App_Data\CreamosTuWebDB.mdf" />
-    <Content Include="App_Data\CreamosTuWebDB_log.ldf">
-      <DependentUpon>CreamosTuWebDB.mdf</DependentUpon>
-    </Content>
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
   </ItemGroup>
