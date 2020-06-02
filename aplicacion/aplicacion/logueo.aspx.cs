@@ -11,16 +11,28 @@ namespace aplicacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"] != null)
+            {
+                string valor = (string)Session["user"].ToString();
+                if (valor == "usuario")
+                {
+                    string url = "/usuarios/index.aspx";
+                    HttpContext.Current.Response.Redirect(url);
+                }
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Session["usuario"] = true;
-            Console.WriteLine(Session["usuario"].ToString());
+            
+            string user = "usuario";
+            Session["user"] = user;
 
             string url = "/usuarios/index.aspx";
             HttpContext.Current.Response.Redirect(url);
+
+
+
         }
     }
 }

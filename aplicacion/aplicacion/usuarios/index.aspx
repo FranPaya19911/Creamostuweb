@@ -10,8 +10,18 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <p>usuario</p>
+            <a onclick="mostrar()">usuario</a>
         </div>
     </form>
 </body>
 </html>
+<script>
+    function mostrar() {
+        alert("hola");
+        if ('<%= Session["user"].ToString() %>' != null) {
+            alert("hola1");
+            var valores_sesion = '<%= Session["user"] %>';
+            alert(valores_sesion);
+        }
+    }
+</script>
