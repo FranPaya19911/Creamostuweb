@@ -67,24 +67,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\index.aspx" />
     <Content Include="App_Data\DBCreamostuweb.mdf" />
     <Content Include="App_Data\DBCreamostuweb_log.ldf">
       <DependentUpon>DBCreamostuweb.mdf</DependentUpon>
     </Content>
     <Content Include="cabezera.ascx" />
+    <Content Include="Error.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="css\general.css" />
     <Content Include="logueo.aspx" />
+    <Content Include="usuarios\index.aspx" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cabezera.ascx.cs">
       <DependentUpon>cabezera.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="cabezera.ascx.designer.cs">
       <DependentUpon>cabezera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
     <Compile Include="Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
@@ -106,6 +123,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarios\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

@@ -7,15 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace aplicacion
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Error : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string url = "Error.aspx";
-            if (Session["user"] != null)
-            {
-                HttpContext.Current.Response.Redirect(url);
-            }
+
         }
     }
 }

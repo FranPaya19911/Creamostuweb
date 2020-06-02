@@ -13,5 +13,14 @@ namespace aplicacion
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session["usuario"] = true;
+            Console.WriteLine(Session["usuario"].ToString());
+
+            string url = "/usuarios/index.aspx";
+            HttpContext.Current.Response.Redirect(url);
+        }
     }
 }
