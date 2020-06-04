@@ -97,7 +97,12 @@
     </div>
 </body>
 </html>
-<script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
+
+<%--<script>
     alert("hola");
     if ('<%= Session["user"].ToString() %>' != null) {
         alert("hola1");
@@ -106,4 +111,5 @@
         alert(valores_sesion + ". Contador= " + contador);
 
     }
-</script>
+</script>--%>
+

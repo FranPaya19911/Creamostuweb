@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="cabezera.ascx.cs" Inherits="aplicacion.cabezera" %>
 
-<link rel="stylesheet" type="text/css" href="css/general.css">
+<%--<link rel="stylesheet" type="text/css" href="css/general.css">--%>
 
 <header>
     <nav>
@@ -16,3 +16,5 @@
         </a>
     </nav>
 </header>
+
+

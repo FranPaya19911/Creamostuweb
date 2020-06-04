@@ -11,6 +11,9 @@ body {
     src: url('Fuentes/Lato.ttf') format('truetype');
 }
 
+
+
+/*HEADER*/
 nav img {
     margin-left: 11%;
     margin-top: 2px;
@@ -85,6 +88,46 @@ header {
     width: 80%;
     height: 80%;
     margin: 75px 10% 0px 10%;
+}
+
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    margin-top: 1%;
+    text-decoration: none;
+    color: white;
+}
+
+footer a em:hover {
+    color: #0096FE;
+}
+
+footer small {
+    margin-right: 15px;
+}
+
+.flecha {
+    position: fixed;
+    right: 65px;
+    bottom: 2%;
+    display: block;
+}
+
+.flecha:hover {
+    cursor: pointer;
+}
+
+.fa-arrow-alt-circle-up {
+    color: black;
+    font-size: 32px;
 }
 
 

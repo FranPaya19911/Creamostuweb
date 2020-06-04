@@ -76,6 +76,7 @@
     <Content Include="Error.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="css\general.css" />
+    <Content Include="js\footer.js" />
     <Content Include="logueo.aspx" />
     <Content Include="usuarios\index.aspx" />
     <Content Include="Web.config" />
