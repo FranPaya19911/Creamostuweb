@@ -8,7 +8,7 @@
         <ul id="menu">
             <li><a href="index.aspx">Inicio</a></li>
             <li><a href="logueo.aspx">Servicios</a></li>
-            <li><a href="/usuarios/index.aspx">Contacto</a></li>
+            <li><a href="contacto.aspx">Contacto</a></li>
         </ul>
         <a  href="logueo.aspx">
             <span><input type="button" class="buttoniniciar" name="botton" value="Iniciar Session" /></span>

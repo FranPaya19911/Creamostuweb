@@ -73,6 +73,8 @@
       <DependentUpon>DBCreamostuweb.mdf</DependentUpon>
     </Content>
     <Content Include="cabezera.ascx" />
+    <Content Include="contacto.aspx" />
+    <Content Include="css\contacto.css" />
     <Content Include="css\Inicio.css" />
     <Content Include="Error.aspx" />
     <Content Include="Footer.ascx" />
@@ -97,6 +99,13 @@
     </Compile>
     <Compile Include="cabezera.ascx.designer.cs">
       <DependentUpon>cabezera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="contacto.aspx.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contacto.aspx.designer.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
