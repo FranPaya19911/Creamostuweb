@@ -11,7 +11,17 @@ body {
     src: url('Fuentes/Lato.ttf') format('truetype');
 }
 
+p {
+    font-size: 1.125em;
+    font-family: 'Open Sans', sans-serif;
+}
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lato';
+}
 
 /*HEADER*/
 nav img {

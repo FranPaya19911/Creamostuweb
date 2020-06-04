@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/general.css" />
     <link rel="stylesheet" type="text/css" href="css/Inicio.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
 
     <title>Inicio</title>
 
@@ -24,36 +25,42 @@
 
         <div>
             <div class="parallax" id="contenedor-parallax">
-                <h1>lorem ipsum</h1>
-                <p>Lorem ipsum es el texto que se usa habitualmente en diseño.</p>
+                <h1>Creamos Tu Web</h1>
+                <p>Tú empresa de desarrollo web de confianza</p>
             </div>
         </div>
 
         <div class="contenedor">
             <div>
-                <a href="#"><img class="img" src="img/imagen-ejemplo.jpg" alt="producto 1" /></a>
-                <a href="#">
-                    <h2>Producto 1</h2>
-                </a>
-                <p>Descripcion breve producto 1</p>
+                <img src="img/Resposive.png" alt="Responsive" />
+                
+                <h2>Responsive</h2>
+                
+                <p>EL diseño web adaptativo</p>
             </div>
             <div>
-                <a href="#"><img src="img/imagen-ejemplo.jpg" alt="producto 2" /></a>
-                <a href="#">
-                    <h2>Producto 2</h2>
-                </a>
-                <p>Descripcion breve producto 2</p>
+                <img src="img/acuerdo.png" alt="Acuerdo" />
+                
+                <h2>Compromiso</h2>
+                
+                <p>Con nuestros clientes</p>
             </div>
         </div>
 
         <div class="contenedor">
             <div>
-                <img src="img/imagen-ejemplo.jpg" alt="calidad 1" />
-                <p>Descripcion sobre calidad 1</p>
+                <img src="img/garantia.png" alt="Garantia" />
+                
+                 <h2>Garantía</h2>
+                
+                <p>Compromiso de satisfacción</p>
             </div>
             <div>
-                <img src="img/imagen-ejemplo.jpg" alt="calidad 2" />
-                <p>Descripcion sobre calidad 2</p>
+                <img src="img/servicio.png" alt="cServicio" />
+                
+                <h2>Servicio</h2>
+                
+                <p>Personalizado y profesional</p>
             </div>
         </div>
     </div>
