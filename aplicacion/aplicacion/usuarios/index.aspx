@@ -21,7 +21,8 @@
         if ('<%= Session["user"].ToString() %>' != null) {
             alert("hola1");
             var valores_sesion = '<%= Session["user"] %>';
-            alert(valores_sesion);
+            var contador = '<%= Session["cont"] %>';
+            alert(valores_sesion + ". Contador= " + contador);
         }
     }
 </script>

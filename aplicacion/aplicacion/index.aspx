@@ -97,3 +97,13 @@
     </div>
 </body>
 </html>
+<script>
+    alert("hola");
+    if ('<%= Session["user"].ToString() %>' != null) {
+        alert("hola1");
+        var valores_sesion = '<%= Session["user"] %>';
+        var contador = '<%= Session["cont"] %>';
+        alert(valores_sesion + ". Contador= " + contador);
+
+    }
+</script>

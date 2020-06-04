@@ -9,10 +9,25 @@ namespace aplicacion
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        string contador = "0";
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["cont"] == null)
+            {
+                Session["cont"] = contador;
+            }
+            
+            if (Session["cont"].ToString() == "0")
+            {
+                string user = "invitado";
+                Session["user"] = user;
+                contador= "1";
+                Session["cont"] = contador;
+            }
+            
             string url = "Error.aspx";
-            if (Session["user"] != null)
+            if (Session["user"].ToString() != "invitado")
             {
                 HttpContext.Current.Response.Redirect(url);
             }

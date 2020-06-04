@@ -32,14 +32,14 @@
 </html>
 
 <script>
-    <%--function mostrar() {
+    function mostrar() {
         alert("hola");
         if ('<%= Session["user"].ToString() %>' != null) {
             alert("hola1");
             var valores_sesion = '<%= Session["user"] %>';
             alert(valores_sesion);
         }
-    }--%>
+    }
     
     
 </script>
