@@ -8,45 +8,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
     <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/Inicio.css" />
+
     <title>Inicio</title>
-    <style>
-        .parallax {
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: cover;
-            height: 400px;
-            background-color: black;
-        }
 
-        #contenedor-parallax {
-            background-image: url('img/parallax-inicio.png');
-        }
-
-        #contenedor-parallax h1 {
-            padding-top: 100px;
-            color: white;
-            text-align: center;
-        }
-
-        #contenedor-parallax p {
-            color: white;
-            text-align: center;
-            margin: 10px;
-        }
-
-        .contenedor {
-            width: 100%;
-            text-align: center;
-            display: flex;
-            margin-bottom: 4%;
-            margin-top: 2%;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
 </head>
 <body>
     <div>
@@ -91,7 +58,6 @@
         </div>
     </div>
 
-
     <div>
         <uc1:Footer runat="server" id="Footer" />
     </div>
@@ -99,7 +65,7 @@
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
 <script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
 
 <%--<script>

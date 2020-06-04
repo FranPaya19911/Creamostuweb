@@ -73,6 +73,7 @@
       <DependentUpon>DBCreamostuweb.mdf</DependentUpon>
     </Content>
     <Content Include="cabezera.ascx" />
+    <Content Include="css\Inicio.css" />
     <Content Include="Error.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="css\general.css" />
