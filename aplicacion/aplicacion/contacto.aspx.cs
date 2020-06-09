@@ -26,9 +26,6 @@ namespace aplicacion
             mentelefono = telefono.Value;
             menconcepto = asunto.Value;
             menmensje = mensaje.Value;
-           
-            
-            
 
            string body = 
                 "<body>" + 
@@ -43,7 +40,7 @@ namespace aplicacion
             System.Net.Mail.MailMessage msg = new System.Net.Mail.MailMessage();
             msg.To.Add("final.proyecto.correo@gmail.com");
             msg.From = new MailAddress("final.proyecto.correo@gmail.com", "Creamos Tu Web", System.Text.Encoding.UTF8);
-            msg.Subject = "Urgente mensaje de usuario por contacto";
+            msg.Subject = "Mensaje de usuario por contacto.aspx";
             msg.SubjectEncoding = System.Text.Encoding.UTF8;
             msg.IsBodyHtml = true;
             msg.Body = body;
@@ -59,7 +56,7 @@ namespace aplicacion
 
             try
             {
-                string url = "contacto.aspx";
+                string url = "index.aspx";
                 client.Send(msg);
                 HttpContext.Current.Response.Redirect(url);
             }

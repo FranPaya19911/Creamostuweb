@@ -11,6 +11,15 @@
     padding: 25px;
 }
 
+.tittle-form {
+    bottom: 5px;
+    color: #58D3F7;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+}
+
 
 .form-group {
     margin: 30px auto;
@@ -172,5 +181,19 @@ iframe:hover,
 iframe:focus{
     border: 1px solid #BEEDFB;
 }
+.logintxt{
+    margin:15px;
+}
+.logintxt span {
+    color: #ffffff;
+    padding:1%;
+}
 
+.logintxt span a {
+    text-decoration: none;
+    color:#ffffff;
+}
 
+.logintxt span a:hover {
+    color: #0096FE;
+}
