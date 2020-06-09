@@ -82,6 +82,8 @@
     <Content Include="css\general.css" />
     <Content Include="js\footer.js" />
     <Content Include="logueo.aspx" />
+    <Content Include="registro.aspx" />
+    <Content Include="servicios.aspx" />
     <Content Include="usuarios\index.aspx" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
@@ -136,6 +138,20 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registro.aspx.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registro.aspx.designer.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="servicios.aspx.cs">
+      <DependentUpon>servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="servicios.aspx.designer.cs">
+      <DependentUpon>servicios.aspx</DependentUpon>
     </Compile>
     <Compile Include="usuarios\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

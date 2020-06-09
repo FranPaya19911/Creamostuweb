@@ -197,3 +197,8 @@ iframe:focus{
 .logintxt span a:hover {
     color: #0096FE;
 }
+
+.cambio{
+    float:right;
+    margin-bottom:10px;
+}

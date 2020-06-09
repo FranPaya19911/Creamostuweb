@@ -76,7 +76,7 @@
                 </div>
 
                 <div>
-                    <asp:Button ID="Button1" CssClass="btn-enviar" runat="server" Text="Enviar" OnClick="Button1_Click"  disabled/>
+                    <asp:Button ID="Button1" CssClass="btn-enviar" runat="server" Text="Enviar" OnClick="Button1_Click" disabled/>
                </div>
 
             </form>
@@ -99,6 +99,7 @@
 </body>
 </html>
 <script>
+
     function priva()
     {
         var checked = document.getElementById("checkbox").checked;
