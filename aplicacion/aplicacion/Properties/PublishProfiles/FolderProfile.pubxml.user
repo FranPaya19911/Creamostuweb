@@ -6,7 +6,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Propietario\Desktop</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Propietario\Desktop\proyecto</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="admin/index.aspx">
@@ -19,10 +19,10 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>06/09/2020 13:52:23</publishTime>
     </File>
     <File Include="bin/aplicacion.dll">
-      <publishTime>06/10/2020 09:47:54</publishTime>
+      <publishTime>06/10/2020 09:51:48</publishTime>
     </File>
     <File Include="bin/aplicacion.pdb">
-      <publishTime>06/10/2020 09:47:54</publishTime>
+      <publishTime>06/10/2020 09:51:48</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>05/24/2018 13:38:22</publishTime>
@@ -188,6 +188,9 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
     </File>
     <File Include="index.aspx">
       <publishTime>06/09/2020 19:04:04</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>06/10/2020 09:50:40</publishTime>
     </File>
     <File Include="js/footer.js">
       <publishTime>06/04/2020 11:01:37</publishTime>
