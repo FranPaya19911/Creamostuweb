@@ -19,17 +19,11 @@
         <uc1:cabezera runat="server" ID="cabezera" />
     </div>
     <div class="main">
-        <form id="form1" runat="server">
-            <div>
-            </div>
-        </form>
-        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-    
 
+        <h1> Creacion de páginas web & Analisis web </h1>
 
-
-
-        <asp:AdRotator ID="AdRotator1" runat="server" />
+        <div></div>
+        <div></div>
 
 
         <asp:Panel runat="server">

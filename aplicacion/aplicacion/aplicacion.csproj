@@ -80,6 +80,7 @@
     <Content Include="Error.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="css\general.css" />
+    <Content Include="index.html" />
     <Content Include="js\footer.js" />
     <Content Include="logueo.aspx" />
     <Content Include="registro.aspx" />
