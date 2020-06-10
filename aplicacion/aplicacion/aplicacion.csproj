@@ -77,6 +77,7 @@
     <Content Include="contacto.aspx" />
     <Content Include="css\contacto.css" />
     <Content Include="css\Inicio.css" />
+    <Content Include="css\servicios.css" />
     <Content Include="Error.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="css\general.css" />

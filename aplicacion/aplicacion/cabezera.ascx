@@ -6,7 +6,7 @@
     <nav>
         <a href="index.aspx"><img id="logo" src="img/logo1.png" alt="logo"></a>
         <ul id="menu">
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.aspx">Inicio</a></li>
             <li><a href="servicios.aspx">Servicios</a></li>
             <li><a href="contacto.aspx">Contacto</a></li>
         </ul>
