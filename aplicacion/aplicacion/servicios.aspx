@@ -85,7 +85,6 @@
                 </p>
                 <input type="button" id="analisisweb" onclick="comprobar('analisis')" value="Hacer pedido" />
             </div>
-
         </div>
 
     </div>
@@ -98,6 +97,19 @@
 </html>
 <script>
     function comprobar(id) {
-        alert(id)
+
+        if ('<%= Session["user"].ToString() %>' == "invitado") {
+
+            location.href = "logueo.aspx";
+
+        } else if ('<%= Session["user"].ToString() %>' == "usuario") {
+
+            if (id == "web") {
+                location.href = "";
+            } else {
+                location.href = "";
+            }
+        }
+        
     }
 </script>
