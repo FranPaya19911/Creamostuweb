@@ -38,7 +38,7 @@
                 <span class="cambio" ><a href="#" >¿Has olvidado tu contraseña?</a></span>
             </div>
             <div>
-                <asp:Button ID="Button1" CssClass="btn-enviar" runat="server" Text="Iniciar sesion" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" CssClass="btn-enviar" runat="server" Text="Iniciar sesion"  OnClick="Button1_Click" />
             </div>
 
             <div class="logintxt">
@@ -58,6 +58,10 @@
 </html>
 
 <script>
+    function oka() {
+        alert("hola");
+    }
+
     function mostrar() {
         alert("hola");
         if ('<%= Session["user"].ToString() %>' != null) {
