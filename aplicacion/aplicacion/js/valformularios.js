@@ -60,33 +60,5 @@ function valcorreo() {
 }
 
 function valcontra() {
-
-}
-
-function valboton(pagina) {
-    var valcorreo = false;
-    var valcontra = false;
-    var checkbox = false;
-
-    var checked = document.getElementById("check").checked;
-    var correo = document.getElementById("valcorreo").style.display;
-    var contra = document.getElementById("valcontra").style.display;
     
-    if (checked) {
-        checkbox = true;
-    } else {
-        checkbox = false;
-    }
-
-
-
-    //    var checked = document.getElementById("check").checked;
-    //    var compo = document.getElementById("valcorreo").style.display;
-    //    alert(compo)
-
-    //    if (checked) {
-    //        document.getElementById("Button1").disabled = false;
-    //    } else {
-    //        document.getElementById("Button1").disabled = true;
-    //    }
 }

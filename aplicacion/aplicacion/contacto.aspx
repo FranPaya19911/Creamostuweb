@@ -20,7 +20,7 @@
 <title>Contacto</title>
 
 </head>
-<body>
+<body onload="cargar()">
     <div>
         <uc1:cabezera runat="server" ID="cabezera" />
     </div>
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="pol">
-                    <label><input id="checkbox" type="checkbox" name="privacidad" onclick="priva()" /> <a href="#">Politica de privacidad y cookies</a></label>
+                    <label><input id="checkbox" type="checkbox" name="privacidad" onclick="btnConcacto()" /> <a href="#">Politica de privacidad y cookies</a></label>
                 </div>
 
                 <div>
@@ -90,7 +90,7 @@
             </form>
             <br />
         <br />
-        <div id="valcorreo" style="display:'none'">
+        <div id="valcorreo">
             <label class="validar">El correo debe tener "@" y terminar en "." y despues debe tener [2-4] caracteres</label>
             <hr />
         </div>
@@ -115,14 +115,28 @@
 <script src="js/valformularios.js"></script>
 <script>
 
-    function priva()
+    function cargar() {
+        document.getElementById("valcorreo").style.display = "none";
+    }
+
+    function btnConcacto()
     {
         var checked = document.getElementById("checkbox").checked;
+        var correo = document.getElementById("correo").value;
+        var valemail = document.getElementById("valcorreo").style.display;
+        if ((correo != "") && (valemail == "none")) {
 
-        if (checked) {
-            document.getElementById("Button1").disabled = false;
+            if (checked) {
+                document.getElementById("Button1").disabled = false;
+            } else {
+                document.getElementById("Button1").disabled = true;
+            }
+
         } else {
-            document.getElementById("Button1").disabled = true;
+            alert("No puedes activar el checkbox si el formulario no está bien rellenado");
+            document.getElementById("checkbox").checked = false;
         }
+
+        
     }
 </script>

@@ -42,7 +42,7 @@
            </div>
 
             <div class="pol">
-                <label><input id="check" type="checkbox" name="privacidad" onclick="privo()" /> <a href="#">He léido y acepto los términos del servicio</a></label>
+                <label><input id="check" type="checkbox" name="privacidad" onclick="btnRegistro()" /> <a href="#">He léido y acepto los términos del servicio</a></label>
            </div>
 
             <div>
@@ -83,17 +83,25 @@
         document.getElementById("valcontra").style.display = "none";
     }
 
-    function privo() {
-        alert("hola");
-        document.getelementbyid("check").checked = 0;
-        //var checked = document.getelementbyid("check").checked;
-        //var compo = document.getelementbyid("valcorreo").style.display;
-        //alert(compo)
+    function btnRegistro() {
+        var checked = document.getElementById("check").checked;
+        var correo = document.getElementById("correo").value;
+        var password = document.getElementById("password").value;
+        var valemail = document.getElementById("valcorreo").style.display;
+        var valpass = document.getElementById("valcontra").style.display;
+        
 
-        //if (checked) {
-        //    document.getelementbyid("button1").disabled = false;
-        //} else {
-        //    document.getelementbyid("button1").disabled = true;
-        //}
+        if ((correo != "") && (valemail == "none") && (password != "") && (valpass == "none")) {
+
+            if (checked) {
+                document.getElementById("Button1").disabled = false;
+            } else {
+                document.getElementById("Button1").disabled = true;
+            }
+
+        } else {
+            alert("No puedes activar el checkbox si el formulario no está bien rellenado");
+            document.getElementById("check").checked = false;
+        }
     }
 </script>
