@@ -18,7 +18,7 @@
             <h1 class="tittle-form"> Regístrate </h1>
            
             <div class="form-group">
-                <input type="text" id="nombre" name="nombre" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required"  />
+                <input type="text" id="nombre" name="nombre" class="control-inputs" runat="server"  maxlength="100" autocomplete="off" value="" required="required" onkeypress="return valnombre(event)" />
                 <label for="correo" class="control-label">
                     Nombre:
                 </label>
@@ -26,7 +26,7 @@
             </div>
 
             <div class="form-group">
-                <input type="email" id="correo" name="correo" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required"  />
+                <input type="email" id="correo" name="correo" class="control-inputs" runat="server" maxlength="100" value="" required="required"  />
                 <label for="correo" class="control-label">
                     Correo:
                 </label>
@@ -61,22 +61,39 @@
                 </span>
             </div>
         </form>
+        <br />
+        <br />
+        <div id="valcorreo">
+            <label class="validar">El correo debe tener "@" y terminar en "." y despues debe tener [2-4] caracteres</label>
+            <hr />
+        </div>
+        <div id="valcontra">
+            <label class="validar">La contraseña tiene que ser de 8 dijitos y debe tener una [A-Z], una [a-z] y un [0-9]</label>
+            <hr />
+        </div>
     </div>
 </body>
 </html>
+<script src="js/valformularios.js"></script>
 <script>
 
     function desactivado() {
         document.getElementById("Button1").disabled = true;
+        document.getElementById("valcorreo").style.display = "none";
+        document.getElementById("valcontra").style.display = "none";
     }
 
     function privo() {
-        var checked = document.getElementById("check").checked;
+        alert("hola");
+        document.getelementbyid("check").checked = 0;
+        //var checked = document.getelementbyid("check").checked;
+        //var compo = document.getelementbyid("valcorreo").style.display;
+        //alert(compo)
 
-        if (checked) {
-            document.getElementById("Button1").disabled = false;
-        } else {
-            document.getElementById("Button1").disabled = true;
-        }
+        //if (checked) {
+        //    document.getelementbyid("button1").disabled = false;
+        //} else {
+        //    document.getelementbyid("button1").disabled = true;
+        //}
     }
 </script>

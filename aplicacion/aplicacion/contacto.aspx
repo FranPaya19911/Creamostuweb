@@ -32,7 +32,7 @@
             <form id="form1" class="caja-form" runat="server">
                 
                 <div class="form-group">
-                    <input type="text" id="nombre" name="nombre" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required"  />
+                    <input type="text" id="nombre" name="nombre" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required" onkeypress="return valnombre(event)" />
                     <label for="nombre" class="control-label">
                         Nombre
                     </label>
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="email" id="correo" name="correo" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required" />
+                    <input type="email" id="correo" name="correo" class="control-inputs" runat="server" maxlength="100" autocomplete="on" value="" required="required" />
                     <label for="correo" class="control-label">
                         E-mail
                     </label>
@@ -48,7 +48,15 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="tel" id="telefono" name="telefono" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required" />
+                    <input type="tel" id="prefijo" name="prefijo" class="control-inputs" runat="server" maxlength="4" autocomplete="off" value="" required="required"  onkeypress="return valtelefono(event)"/>
+                    <label for="prefijo" class="control-label">
+                       Prefijo telefono
+                    </label>
+                    <i class="bar"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="telefono" name="telefono" class="control-inputs" runat="server" maxlength="9" autocomplete="off" value="" required="required"  onkeypress="return valtelefono(event)"/>
                     <label for="telefono" class="control-label">
                        Telefono
                     </label>
@@ -56,7 +64,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="text" id="asunto" name="asunto" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required" />
+                    <input type="text" id="asunto" name="asunto" class="control-inputs" runat="server" maxlength="40" autocomplete="off" value="" required="required" />
                     <label for="asunto" class="control-label">
                         Concepto
                     </label>
@@ -80,6 +88,12 @@
                </div>
 
             </form>
+            <br />
+        <br />
+        <div id="valcorreo" style="display:'none'">
+            <label class="validar">El correo debe tener "@" y terminar en "." y despues debe tener [2-4] caracteres</label>
+            <hr />
+        </div>
         </div>
         <section>
             <address>
@@ -98,6 +112,7 @@
 
 </body>
 </html>
+<script src="js/valformularios.js"></script>
 <script>
 
     function priva()

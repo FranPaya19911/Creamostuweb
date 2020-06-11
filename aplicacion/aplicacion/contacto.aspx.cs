@@ -19,10 +19,11 @@ namespace aplicacion
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string mennombre, menemail, mentelefono, menconcepto, menmensje;
+            string mennombre, menemail, menprefijo, mentelefono, menconcepto, menmensje;
             
             mennombre = nombre.Value;
             menemail = correo.Value;
+            menprefijo = prefijo.Value;
             mentelefono = telefono.Value;
             menconcepto = asunto.Value;
             menmensje = mensaje.Value;
@@ -32,7 +33,7 @@ namespace aplicacion
                 "<h1>Mensaje de contacto </h1>" +
                 "<label><b>Nombre: </b></label>" + "<label>"+ mennombre +"</label>"+ "<br />"+
                 "<label><b>Correo: </b></label>" + "<label>" + menemail + "</label>" + "<br />" +
-                "<label><b>Telefono: </b></label>" + "<label>" + mentelefono + "</label>" + "<br />" +
+                "<label><b>Telefono: </b></label>" + "<label>"+ "+" + menprefijo + " " + mentelefono + "</label>" + "<br />" +
                 "<label><b>Asunto: </b></label>" + "<label>" + menconcepto + "</label>" + "<br />" + "<br />" +
                 "<label><b>Mensaje: </b></label>" + "<p>" + menmensje + "</p>" + 
                 "</body>";

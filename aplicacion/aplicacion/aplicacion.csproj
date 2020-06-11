@@ -82,6 +82,7 @@
     <Content Include="Footer.ascx" />
     <Content Include="css\general.css" />
     <Content Include="js\footer.js" />
+    <Content Include="js\valformularios.js" />
     <Content Include="logueo.aspx" />
     <Content Include="registro.aspx" />
     <Content Include="servicios.aspx" />

@@ -51,6 +51,15 @@ namespace aplicacion
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl correo;
 
         /// <summary>
+        /// Control prefijo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl prefijo;
+
+        /// <summary>
         /// Control telefono.
         /// </summary>
         /// <remarks>

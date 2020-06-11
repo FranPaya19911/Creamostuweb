@@ -202,3 +202,16 @@ iframe:focus{
     float:right;
     margin-bottom:10px;
 }
+
+.validar {
+    height: 25px;
+    background-color: #FE3027;
+    color: white;
+    margin: 15px 0;
+    padding: 2px;
+    line-height: 160%;
+}
+
+hr {
+    margin-bottom:2%;
+}

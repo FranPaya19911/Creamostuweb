@@ -17,6 +17,10 @@ p {
     text-align:justify;
 }
 
+label {
+    font-family: 'Open Sans', sans-serif;
+}
+
 h1,
 h2,
 h3,
