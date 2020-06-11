@@ -26,7 +26,7 @@
             </div>
 
             <div class="form-group">
-                <input type="email" id="correo" name="correo" class="control-inputs" runat="server" maxlength="100" value="" required="required"  />
+                <input type="email" id="correo" name="correo" class="control-inputs" runat="server" maxlength="100" value="" required="required" onchange="valcorreo();" />
                 <label for="correo" class="control-label">
                     Correo:
                 </label>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="form-group">
-                <input type="password" id="password" name="password" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required"  />
+                <input type="password" id="password" name="password" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required" onchange="valcontra()" />
                 <label for="password" class="control-label">
                     Contraseña:
                 </label>
@@ -75,33 +75,3 @@
 </body>
 </html>
 <script src="js/valformularios.js"></script>
-<script>
-
-    function desactivado() {
-        document.getElementById("Button1").disabled = true;
-        document.getElementById("valcorreo").style.display = "none";
-        document.getElementById("valcontra").style.display = "none";
-    }
-
-    function btnRegistro() {
-        var checked = document.getElementById("check").checked;
-        var correo = document.getElementById("correo").value;
-        var password = document.getElementById("password").value;
-        var valemail = document.getElementById("valcorreo").style.display;
-        var valpass = document.getElementById("valcontra").style.display;
-        
-
-        if ((correo != "") && (valemail == "none") && (password != "") && (valpass == "none")) {
-
-            if (checked) {
-                document.getElementById("Button1").disabled = false;
-            } else {
-                document.getElementById("Button1").disabled = true;
-            }
-
-        } else {
-            alert("No puedes activar el checkbox si el formulario no está bien rellenado");
-            document.getElementById("check").checked = false;
-        }
-    }
-</script>

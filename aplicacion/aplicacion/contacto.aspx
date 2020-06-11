@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="email" id="correo" name="correo" class="control-inputs" runat="server" maxlength="100" autocomplete="on" value="" required="required" />
+                    <input type="email" id="correo" name="correo" class="control-inputs" runat="server" maxlength="100" autocomplete="on" value="" required="required" onchange="valcorreo()" />
                     <label for="correo" class="control-label">
                         E-mail
                     </label>
@@ -113,30 +113,3 @@
 </body>
 </html>
 <script src="js/valformularios.js"></script>
-<script>
-
-    function cargar() {
-        document.getElementById("valcorreo").style.display = "none";
-    }
-
-    function btnConcacto()
-    {
-        var checked = document.getElementById("checkbox").checked;
-        var correo = document.getElementById("correo").value;
-        var valemail = document.getElementById("valcorreo").style.display;
-        if ((correo != "") && (valemail == "none")) {
-
-            if (checked) {
-                document.getElementById("Button1").disabled = false;
-            } else {
-                document.getElementById("Button1").disabled = true;
-            }
-
-        } else {
-            alert("No puedes activar el checkbox si el formulario no está bien rellenado");
-            document.getElementById("checkbox").checked = false;
-        }
-
-        
-    }
-</script>
