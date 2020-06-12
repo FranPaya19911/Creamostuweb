@@ -26,11 +26,11 @@ namespace aplicacion
                 Session["cont"] = contador;
             }
             
-            string url = "Error.aspx";
-            if (Session["user"].ToString() != "invitado")
-            {
-                HttpContext.Current.Response.Redirect(url);
-            }
+            //string url = "Error.aspx";
+            //if (Session["user"].ToString() != "invitado")
+            //{
+            //    HttpContext.Current.Response.Redirect(url);
+            //}
         }
     }
 }

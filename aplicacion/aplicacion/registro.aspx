@@ -18,7 +18,7 @@
             <h1 class="tittle-form"> Regístrate </h1>
            
             <div class="form-group">
-                <input type="text" id="nombre" name="nombre" class="control-inputs" runat="server"  maxlength="100" autocomplete="off" value="" required="required" onkeypress="return valnombre(event)" />
+                <input type="text" id="nombre" name="nombre" class="control-inputs" runat="server"  maxlength="40" autocomplete="off" value="" required="required" onkeypress="return valnombre(event)" />
                 <label for="correo" class="control-label">
                     Nombre:
                 </label>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="form-group">
-                <input type="password" id="password" name="password" class="control-inputs" runat="server" maxlength="100" autocomplete="off" value="" required="required" onchange="valcontra()" />
+                <input type="password" id="password" name="password" class="control-inputs" runat="server" maxlength="40" autocomplete="off" value="" required="required" onchange="valcontra()" />
                 <label for="password" class="control-label">
                     Contraseña:
                 </label>
