@@ -57,7 +57,7 @@
 </body>
 </html>
 
-<script>
+<%--<script>
     function oka() {
         alert("hola");
     }
@@ -71,4 +71,4 @@
         }
     }
 
-</script>
+</script>--%>

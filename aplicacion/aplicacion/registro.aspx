@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/general.css" />
     <title>register</title>
 </head>
-<body  onload="desactivado()">
+<body onload="desactivado()">
     <div class="centrado">
         <form id="form1" runat="server" class="caja-form">
             <h1 class="tittle-form"> Regístrate </h1>
@@ -63,14 +63,22 @@
         </form>
         <br />
         <br />
+
         <div id="valcorreo">
             <label class="validar">El correo debe tener "@" y terminar en "." y despues debe tener [2-4] caracteres</label>
             <hr />
         </div>
+
         <div id="valcontra">
             <label class="validar">La contraseña tiene que ser de 8 dijitos y debe tener una [A-Z], una [a-z] y un [0-9]</label>
             <hr />
         </div>
+
+        <div id="exite" runat="server" style="display:none">
+            <label class="validar">Ya tienes una cuenta, Inicia sesion. Este correo ya existe</label>
+            <hr />
+        </div>
+        
     </div>
 </body>
 </html>

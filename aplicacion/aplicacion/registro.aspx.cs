@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace aplicacion
@@ -29,31 +30,80 @@ namespace aplicacion
                 HttpContext.Current.Response.Redirect(url);
             }
 
-
             string nom = nombre.Value;
             string cor = correo.Value;
             string pas = password.Value;
+            bool VariablesSession = false;
+            int id =0;
 
+            string BDconexion = ConfigurationManager.ConnectionStrings["DBCreamostuweb"].ConnectionString;
+            SqlConnection conexion = new SqlConnection(BDconexion);
+
+            string strComandoSqlConsulta = "Select u.Correo from dbo.USUARIOS as u where u.Correo = '" + cor + "'";
+            string strComandoSqlInsercion = "INSERT USUARIOS" + "(Nombre,Correo,Password,Foto,TipoDeUsuario,Activo) VALUES (" + "'" + nom + "','" + cor + "','" + pas + "','" + null + "','Usuario','True');";
+            string strComandoSqlId = "Select UsuarioId from dbo.USUARIOS where Correo = '" + cor + "'";
 
             try
             {
-                string BDconexion = ConfigurationManager.ConnectionStrings["DBCreamostuweb"].ConnectionString;
-                using(SqlConnection conexion = new SqlConnection)
+
+                conexion.Open();
+
+                SqlCommand comando = conexion.CreateCommand();
+                comando.CommandText = strComandoSqlConsulta;
+
+                SqlDataReader dr = comando.ExecuteReader();
+
+                if (dr.Read())
                 {
-                    
+                    exite.Attributes.Add("style", "display:block");
+                }
+                else
+                {
+                    dr.Close();
+
+                    SqlTransaction tran = conexion.BeginTransaction();
+                    comando.Transaction = tran;
+
+                    try
+                    {
+                        comando.CommandText = strComandoSqlInsercion;
+                        comando.ExecuteNonQuery();
+                        tran.Commit();
+
+                        VariablesSession = true;
+
+                        comando.CommandText = strComandoSqlId;
+                        id = Convert.ToInt32(comando.ExecuteScalar());
+
+                    }
+                    catch
+                    {
+                        HttpContext.Current.Response.Redirect(url);
+                    }
                 }
 
 
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show(ex.ToString());
-            }
-
-            if (0 == 0)
-            {
-                url = "index.aspx";
                 HttpContext.Current.Response.Redirect(url);
+            }
+            finally
+            {
+                conexion.Close();
+
+                if (VariablesSession)
+                {
+                    string user = "usuario";
+
+                    Session["user"] = user;
+                    Session["id"] = id;
+                    Session["nombre"] = nom;
+
+                    url = "index.aspx";
+                    HttpContext.Current.Response.Redirect(url);
+                }
+                
             }
             
         }

@@ -75,14 +75,17 @@
 <script type="text/javascript" src="js/footer.js"></script>
 <script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
 
-<%--<script>
-    alert("hola");
+<script>
+   
     if ('<%= Session["user"].ToString() %>' != null) {
-        alert("hola1");
         var valores_sesion = '<%= Session["user"] %>';
-        var contador = '<%= Session["cont"] %>';
-        alert(valores_sesion + ". Contador= " + contador);
-
+        alert(valores_sesion);
     }
-</script>--%>
+
+    <%-- 
+    alert("hola");
+    var contador = '<%= Session["cont"] %>';
+    alert(valores_sesion + ". Contador= " + contador);
+    --%>
+</script>
 
