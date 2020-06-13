@@ -81,11 +81,5 @@
         var valores_sesion = '<%= Session["user"] %>';
         alert(valores_sesion);
     }
-
-    <%-- 
-    alert("hola");
-    var contador = '<%= Session["cont"] %>';
-    alert(valores_sesion + ". Contador= " + contador);
-    --%>
 </script>
 

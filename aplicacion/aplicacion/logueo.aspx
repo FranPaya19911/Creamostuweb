@@ -53,22 +53,12 @@
                 </span>
             </div>
         </form>
+        <br />
+        <br />
+         <div id="noexiste" runat="server" style="display:none">
+            <label class="validar">Lo sentimos, las credenciales que estás usando no son válidas.</label>
+            <hr />
+        </div>
     </div>
 </body>
 </html>
-
-<%--<script>
-    function oka() {
-        alert("hola");
-    }
-
-    function mostrar() {
-        alert("hola");
-        if ('<%= Session["user"].ToString() %>' != null) {
-            alert("hola1");
-            var valores_sesion = '<%= Session["user"] %>';
-            alert(valores_sesion);
-        }
-    }
-
-</script>--%>

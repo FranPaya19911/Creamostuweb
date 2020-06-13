@@ -34,7 +34,7 @@ namespace aplicacion
             string cor = correo.Value;
             string pas = password.Value;
             bool VariablesSession = false;
-            int id =0;
+            int id = 0;
 
             string BDconexion = ConfigurationManager.ConnectionStrings["DBCreamostuweb"].ConnectionString;
             SqlConnection conexion = new SqlConnection(BDconexion);
