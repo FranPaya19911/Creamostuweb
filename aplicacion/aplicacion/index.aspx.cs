@@ -22,15 +22,13 @@ namespace aplicacion
             {
                 string user = "invitado";
                 Session["user"] = user;
-                contador= "1";
+                
+                Session["id"] = "id";
+                Session["nombre"] = "nombre";
+
+                contador = "1";
                 Session["cont"] = contador;
             }
-            
-            //string url = "Error.aspx";
-            //if (Session["user"].ToString() != "invitado")
-            //{
-            //    HttpContext.Current.Response.Redirect(url);
-            //}
         }
     }
 }

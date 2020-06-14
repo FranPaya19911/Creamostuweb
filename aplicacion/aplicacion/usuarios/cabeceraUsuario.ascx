@@ -9,7 +9,7 @@
         </ul>
         <div id="usuario" class="prueba">
             <a  href="#">
-            <span><input type="text" class="buttoniniciar"  value="Nombre usuario" /></span>
+            <span><input id="cabeceraUsuario" type="text" class="buttoniniciar"  value="Nombre usuario"/></span>
             </a>
 
             <ul class="submenu ">
@@ -18,7 +18,7 @@
                 <li><a href="#">Chat Support</a></li>
                 <li><a href="#">Crear petición</a></li>
                 <li><a href="#">Incidencia</a></li>
-                <li><a href="#">Cerrar Sesión</a></li>
+                <li><a href="CerrarSesion.aspx">Cerrar Sesión</a></li>
             </ul>
 
         </div>

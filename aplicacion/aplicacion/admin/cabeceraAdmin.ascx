@@ -17,7 +17,7 @@
                 <li><a href="#">Chat Clientes</a></li>
                 <li><a href="#">Peticiones</a></li>
                 <li><a href="#">Incidencia</a></li>
-                <li><a href="#">Cerrar Sesión</a></li>
+                <li><a href="CerrarSesion.aspx">Cerrar Sesión</a></li>
             </ul>
 
         </div>

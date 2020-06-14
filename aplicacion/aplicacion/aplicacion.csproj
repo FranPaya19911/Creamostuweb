@@ -74,6 +74,7 @@
       <DependentUpon>DBCreamostuweb.mdf</DependentUpon>
     </Content>
     <Content Include="cabezera.ascx" />
+    <Content Include="CerrarSesion.aspx" />
     <Content Include="contacto.aspx" />
     <Content Include="css\contacto.css" />
     <Content Include="css\Inicio.css" />
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="cabezera.ascx.designer.cs">
       <DependentUpon>cabezera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CerrarSesion.aspx.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CerrarSesion.aspx.designer.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
     </Compile>
     <Compile Include="contacto.aspx.cs">
       <DependentUpon>contacto.aspx</DependentUpon>

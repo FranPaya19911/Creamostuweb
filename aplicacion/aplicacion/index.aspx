@@ -21,10 +21,16 @@
 
 </head>
 <body>
-    <div>
-        <%--<uc1:cabezera runat="server" id="cabezera" />--%>
-        <%--<uc1:cabeceraAdmin runat="server" ID="cabeceraAdmin" />--%>
+    
+    
+    <div  id="admin">
+        <uc1:cabeceraAdmin runat="server" ID="cabeceraAdmin" />
+    </div>
+    <div  id="user">
         <uc1:cabeceraUsuario runat="server" ID="cabeceraUsuario" />
+    </div>
+    <div id="invitado">
+       <uc1:cabezera runat="server" id="cabezera" />
     </div>
     
     <div class="main">
@@ -83,9 +89,33 @@
 
 <script>
    
-    if ('<%= Session["user"].ToString() %>' != null) {
-        var valores_sesion = '<%= Session["user"] %>';
+    <%--if ('<%= Session["user"].ToString() %>' != null) {
+        var valores_sesion = '<%= Session["user"] %>' + ", " + '<%= Session["nombre"] %>' + ", " + '<%= Session["id"] %>';
         alert(valores_sesion);
+    }--%>
+
+    if ('<%= Session["user"].ToString() %>' != null) {
+        if ('<%= Session["user"].ToString() %>' == "admin") {
+
+            document.getElementById("admin").style.display = "block";
+            document.getElementById("user").style.display = "none";
+            document.getElementById("invitado").style.display = "none";
+
+        } else if ('<%= Session["user"].ToString() %>' == "usuario") {
+
+            document.getElementById("admin").style.display = "none";
+            document.getElementById("user").style.display = "block";
+            document.getElementById("invitado").style.display = "none";
+
+            
+            document.getElementById("cabeceraUsuario").value = '<%= Session["nombre"].ToString() %>';
+
+        } else {
+
+            document.getElementById("admin").style.display = "none";
+            document.getElementById("user").style.display = "none";
+            document.getElementById("invitado").style.display = "block";
+        }
     }
 </script>
 
