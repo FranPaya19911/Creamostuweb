@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace aplicacion.usuarios
+namespace aplicacion.admin
 {
-    public partial class index : System.Web.UI.Page
+    public partial class cabeceraAdmin : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

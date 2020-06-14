@@ -38,17 +38,16 @@ nav img {
     float: left;
 }
 
-nav ul {
+#menu {
     margin-top: 5px;
     list-style: none;
     float: left;
     margin-left: 11%;
     text-align: center;
     padding: 1%;
-    
 }
 
-nav li {
+#menu li {
     float: left;
 }
 
@@ -76,11 +75,11 @@ nav input {
     background-color: #EDF0F2;
     border: 1px solid #EDF0F2;
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    cursor: pointer;
 }
 
-.buttoniniciar:hover {
+.buttoniniciar:hover{
     color: #1f1f1f;
-    cursor:pointer;
 }
 
 input:focus {
@@ -102,6 +101,42 @@ header {
     height: 70px;
 }
 
+/*Header con submenu*/
+    
+#usuario.prueba ul{
+    height:0;
+    position:absolute;
+    visibility:hidden;
+    overflow:hidden;
+    top:3.7em;
+    opacity:0;
+    right:0;
+    min-width:200px;
+    padding:0.5em 0;
+    
+}
+
+#usuario.prueba:hover ul {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: all .1s ease-in-out;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    background-color: #EDF0F2;
+    text-align:center;
+}
+
+.submenu {
+    float: right;
+    margin-right: 11%;
+    margin-top:-1px;
+    z-index:-1;
+}
 
 /*BODY*/
 .main {

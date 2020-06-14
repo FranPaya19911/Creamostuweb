@@ -68,7 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\index.aspx" />
+    <Content Include="admin\cabeceraAdmin.ascx" />
     <Content Include="App_Data\DBCreamostuweb.mdf" />
     <Content Include="App_Data\DBCreamostuweb_log.ldf">
       <DependentUpon>DBCreamostuweb.mdf</DependentUpon>
@@ -86,17 +86,17 @@
     <Content Include="logueo.aspx" />
     <Content Include="registro.aspx" />
     <Content Include="servicios.aspx" />
-    <Content Include="usuarios\index.aspx" />
+    <Content Include="usuarios\cabeceraUsuario.ascx" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="admin\cabeceraAdmin.ascx.cs">
+      <DependentUpon>cabeceraAdmin.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="admin\cabeceraAdmin.ascx.designer.cs">
+      <DependentUpon>cabeceraAdmin.ascx</DependentUpon>
     </Compile>
     <Compile Include="cabezera.ascx.cs">
       <DependentUpon>cabezera.ascx</DependentUpon>
@@ -155,12 +155,12 @@
     <Compile Include="servicios.aspx.designer.cs">
       <DependentUpon>servicios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="usuarios\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="usuarios\cabeceraUsuario.ascx.cs">
+      <DependentUpon>cabeceraUsuario.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="usuarios\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="usuarios\cabeceraUsuario.ascx.designer.cs">
+      <DependentUpon>cabeceraUsuario.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

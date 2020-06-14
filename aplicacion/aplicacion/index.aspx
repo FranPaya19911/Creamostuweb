@@ -2,6 +2,10 @@
 
 <%@ Register Src="~/cabezera.ascx" TagPrefix="uc1" TagName="cabezera" %>
 <%@ Register Src="~/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/admin/cabeceraAdmin.ascx" TagPrefix="uc1" TagName="cabeceraAdmin" %>
+<%@ Register Src="~/usuarios/cabeceraUsuario.ascx" TagPrefix="uc1" TagName="cabeceraUsuario" %>
+
+
 
 <!DOCTYPE html>
 
@@ -18,7 +22,9 @@
 </head>
 <body>
     <div>
-        <uc1:cabezera runat="server" id="cabezera" />
+        <%--<uc1:cabezera runat="server" id="cabezera" />--%>
+        <%--<uc1:cabeceraAdmin runat="server" ID="cabeceraAdmin" />--%>
+        <uc1:cabeceraUsuario runat="server" ID="cabeceraUsuario" />
     </div>
     
     <div class="main">
