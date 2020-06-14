@@ -154,4 +154,41 @@ footer small {
     font-size: 32px;
 }
 
+/*Error*/
+.error {
+    padding: 60px 0;
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+}
+
+.imgerror {
+    text-align: center;
+}
+
+.imgerror img {
+    height: 280px;
+    width: 330px;
+}
+
+.textoerror {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.textoerror p {
+    margin-bottom: 5% 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.textoerror a {
+    text-decoration: none;
+}
+
+.botonerror {
+    padding: 1%;
+    background-color: #58D3F7;
+    color: black;
+}
 
