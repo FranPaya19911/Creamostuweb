@@ -1,11 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="cabeceraUsuario.ascx.cs" Inherits="aplicacion.usuarios.cabeceraUsuario" %>
 <header>
     <nav>
-        <a href="index.aspx"><img id="logo" src="img/logo1.png" alt="logo"></a>
+        <a href="index.aspx"><img id="logo" src="../img/logo1.png" alt="logo"></a>
         <ul id="menu">
-            <li><a href="index.aspx">Inicio</a></li>
-            <li><a href="servicios.aspx">Servicios</a></li>
-            <li><a href="contacto.aspx">Contacto</a></li>
+            <li><a href="../index.aspx">Inicio</a></li>
+            <li><a href="../servicios.aspx">Servicios</a></li>
+            <li><a href="../contacto.aspx">Contacto</a></li>
         </ul>
         <div id="usuario" class="prueba">
             <a  href="#">

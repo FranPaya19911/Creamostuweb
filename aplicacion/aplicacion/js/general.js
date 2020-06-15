@@ -24,3 +24,10 @@
         }
     }
 }
+
+function botones(valor) {
+    if (valor == "admin") {
+        document.getElementById("analisisweb").style.display = "none";
+        document.getElementById("paginaweb").style.display = "none";
+    }
+}

@@ -20,7 +20,7 @@
 
     <title>Servicios</title>
 </head>
-<body onload="header('<%= Session["user"].ToString() %>', '<%= Session["nombre"].ToString() %>')">
+<body onload="header('<%= Session["user"].ToString() %>', '<%= Session["nombre"].ToString() %>'); botones('<%= Session["user"].ToString() %>')">
     <div  id="admin">
         <uc1:cabeceraAdmin runat="server" ID="cabeceraAdmin" />
     </div>
@@ -30,7 +30,7 @@
     <div id="invitado">
        <uc1:cabezera runat="server" id="cabezera" />
     </div>
-
+    <form id="form1" runat="server" >
     <div class="main">
         <div class="centrado">
             <h1> Desarrollo web & Análisis </h1>
@@ -51,13 +51,13 @@
         </p>
         <br />
         
-        <div class="contenedor" >
+        <div class="contenedor">
             
-            <div>
+            
                 <img src="img/creamosweb.jpg" alt="imagen web a medida" />
-            </div>
             
-            <div>
+            
+            
                 <h2> Página web</h2>
                 <p>
                     Internet es un canal de comunicación muy potente 
@@ -71,8 +71,10 @@
                     porque nos adaptamos a el tipo de negocio que tengas, 
                     ya sea familiar o multinacional.
                 </p>
-                <input type="button" id="paginaweb" onclick="comprobar('web')" value="Hacer pedido" />
-            </div>
+                
+                <asp:Button ID="paginaweb" runat="server" Text="Hacer pedido" OnClick="paginaweb_Click" />
+                
+            
 
         </div>
 
@@ -92,11 +94,14 @@
                     debido a que hoy, por hoy se consume mucho internet y 
                     nuestras marcas deben quedar bien en ella. 
                 </p>
-                <input type="button" id="analisisweb" onclick="comprobar('analisis')" value="Hacer pedido" />
+                
+                <asp:Button ID="analisisweb" runat="server" Text="Hacer pedido" OnClick="analisisweb_Click" />
+                
             </div>
         </div>
 
     </div>
+    </form>
 
     <div>
         <uc1:Footer runat="server" ID="Footer" />
@@ -105,21 +110,4 @@
 </body>
 </html>
 <script src="js/general.js"></script>
-<script>
-    function comprobar(id) {
-
-        if ('<%= Session["user"].ToString() %>' == "invitado") {
-
-            location.href = "logueo.aspx";
-
-        } else if ('<%= Session["user"].ToString() %>' == "usuario") {
-
-            if (id == "web") {
-                location.href = "";
-            } else {
-                location.href = "";
-            }
-        }
-        
-    }
-</script>
+<script src="js/servicios.js"></script>

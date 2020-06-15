@@ -89,6 +89,8 @@
     <Content Include="registro.aspx" />
     <Content Include="servicios.aspx" />
     <Content Include="usuarios\cabeceraUsuario.ascx" />
+    <Content Include="usuarios\cuenta.aspx" />
+    <Content Include="usuarios\Producto.aspx" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
   </ItemGroup>
@@ -170,6 +172,20 @@
     </Compile>
     <Compile Include="usuarios\cabeceraUsuario.ascx.designer.cs">
       <DependentUpon>cabeceraUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios\cuenta.aspx.cs">
+      <DependentUpon>cuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarios\cuenta.aspx.designer.cs">
+      <DependentUpon>cuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios\Producto.aspx.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarios\Producto.aspx.designer.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
