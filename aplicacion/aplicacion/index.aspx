@@ -20,7 +20,7 @@
     <title>Inicio</title>
 
 </head>
-<body>
+<body onload="header('<%= Session["user"].ToString() %>', '<%= Session["nombre"].ToString() %>')">
     
     
     <div  id="admin">
@@ -86,36 +86,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/footer.js"></script>
 <script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
-
-<script>
-   
-    <%--if ('<%= Session["user"].ToString() %>' != null) {
+<script src="js/general.js"></script>
+<script> 
+    if ('<%= Session["user"].ToString() %>' != null) {
         var valores_sesion = '<%= Session["user"] %>' + ", " + '<%= Session["nombre"] %>' + ", " + '<%= Session["id"] %>';
         alert(valores_sesion);
-    }--%>
-
-    if ('<%= Session["user"].ToString() %>' != null) {
-        if ('<%= Session["user"].ToString() %>' == "admin") {
-
-            document.getElementById("admin").style.display = "block";
-            document.getElementById("user").style.display = "none";
-            document.getElementById("invitado").style.display = "none";
-
-        } else if ('<%= Session["user"].ToString() %>' == "usuario") {
-
-            document.getElementById("admin").style.display = "none";
-            document.getElementById("user").style.display = "block";
-            document.getElementById("invitado").style.display = "none";
-
-            
-            document.getElementById("cabeceraUsuario").value = '<%= Session["nombre"].ToString() %>';
-
-        } else {
-
-            document.getElementById("admin").style.display = "none";
-            document.getElementById("user").style.display = "none";
-            document.getElementById("invitado").style.display = "block";
-        }
     }
 </script>
 

@@ -2,6 +2,8 @@
 
 <%@ Register Src="~/cabezera.ascx" TagPrefix="uc1" TagName="cabezera" %>
 <%@ Register Src="~/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/admin/cabeceraAdmin.ascx" TagPrefix="uc1" TagName="cabeceraAdmin" %>
+<%@ Register Src="~/usuarios/cabeceraUsuario.ascx" TagPrefix="uc1" TagName="cabeceraUsuario" %>
 
 
 
@@ -18,10 +20,17 @@
 
     <title>Servicios</title>
 </head>
-<body>
-    <div>
-        <uc1:cabezera runat="server" ID="cabezera" />
+<body onload="header('<%= Session["user"].ToString() %>', '<%= Session["nombre"].ToString() %>')">
+    <div  id="admin">
+        <uc1:cabeceraAdmin runat="server" ID="cabeceraAdmin" />
     </div>
+    <div  id="user">
+        <uc1:cabeceraUsuario runat="server" ID="cabeceraUsuario" />
+    </div>
+    <div id="invitado">
+       <uc1:cabezera runat="server" id="cabezera" />
+    </div>
+
     <div class="main">
         <div class="centrado">
             <h1> Desarrollo web & Análisis </h1>
@@ -95,6 +104,7 @@
 
 </body>
 </html>
+<script src="js/general.js"></script>
 <script>
     function comprobar(id) {
 

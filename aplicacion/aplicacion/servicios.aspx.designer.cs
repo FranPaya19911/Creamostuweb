@@ -15,6 +15,24 @@ namespace aplicacion
     {
 
         /// <summary>
+        /// Control cabeceraAdmin.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::aplicacion.admin.cabeceraAdmin cabeceraAdmin;
+
+        /// <summary>
+        /// Control cabeceraUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::aplicacion.usuarios.cabeceraUsuario cabeceraUsuario;
+
+        /// <summary>
         /// Control cabezera.
         /// </summary>
         /// <remarks>
