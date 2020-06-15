@@ -31,3 +31,13 @@ function botones(valor) {
         document.getElementById("paginaweb").style.display = "none";
     }
 }
+
+function contenido(valor) {
+    if (valor == "paginaweb") {
+        document.getElementById("analisis").style.display = "none"
+        document.getElementById("web").style.display = "block"
+    } else {
+        document.getElementById("web").style.display = "none"
+        document.getElementById("analisis").style.display = "block"
+    }
+}
