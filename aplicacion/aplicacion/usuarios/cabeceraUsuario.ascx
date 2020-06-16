@@ -14,7 +14,7 @@
 
             <ul class="submenu ">
                 <li><a href="#">Cuenta</a></li>
-                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="/usuarios/Mispedidos.aspx">Mis pedidos</a></li>
                 <li><a href="#">Chat Support</a></li>
                 <li><a href="#">Crear petición</a></li>
                 <li><a href="#">Incidencia</a></li>

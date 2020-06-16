@@ -49,6 +49,7 @@ input[type="submit"] {
 }
 
 table {
+    width:100%;
     margin:10px 0 20px 0;
     background-color: white;
     border: 1px solid #000000;
@@ -74,4 +75,36 @@ table th {
 
 table tr {
     margin-bottom: 2%;
+}
+
+.derecha{
+    width:100%;
+    text-align:right;
+    margin-bottom:70px;
+}
+
+.btn-mis {
+    margin-top: 2%;
+    background-color: #58D3F7;
+    border: 0;
+    color: black;
+    font-size: 17px;
+    height: 37px;
+    min-width:120px;
+    text-align:center;
+}
+
+.btn-mis:hover {
+    background-color: #BEEDFB;
+    cursor: pointer;
+}
+
+.btn-mis:active {
+    border: 0;
+    box-shadow: 1px 0px #010101, 0px 1px #010101, 2px 1px #010101, 1px 2px #010101, 3px 2px #010101, 2px 3px #010101, 4px 3px #010101, 3px 4px #010101;
+    transform: translate(2px, 2px);
+}
+
+.mispedidos{
+    min-height:768px;
 }
