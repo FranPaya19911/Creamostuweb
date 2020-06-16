@@ -170,7 +170,7 @@ namespace aplicacion.usuarios
             finally
             {
                 conexion.Close();
-                string url = "../index.aspx";
+                string url = "Mispedidos.aspx";
                 HttpContext.Current.Response.Redirect(url);
             }
 
