@@ -108,8 +108,8 @@
 
                     <label>Escoge el tipo de diseño</label><br />
                     <asp:DropDownList ID="DropDownList2" runat="server">
-                          <asp:ListItem Selected="True" Value="soloPrincipal"> Plantilla estándar (Aspecto gráfico creado a través de una plantilla elegida por el cliente. Precio 400€.) </asp:ListItem>
-                          <asp:ListItem Value="tiene2o3"> Plantilla personalizada (Aspecto gráfico creado por el cliente. Precio 800€.) </asp:ListItem>
+                          <asp:ListItem Selected="True" Value="PlantillaEstandar"> Plantilla estándar (Aspecto gráfico creado a través de una plantilla elegida por el cliente. Precio 400€.) </asp:ListItem>
+                          <asp:ListItem Value="PlantillaPersonalizada"> Plantilla personalizada (Aspecto gráfico creado por el cliente. Precio 800€.) </asp:ListItem>
                     </asp:DropDownList>
                 </div>
 

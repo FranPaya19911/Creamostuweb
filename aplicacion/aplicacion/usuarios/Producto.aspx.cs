@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace aplicacion.usuarios
 {
@@ -103,9 +106,16 @@ namespace aplicacion.usuarios
                     caracteristicas = caracteristicas + ", Apartado de tienda online";
                     precio = precio + 900;
                 }
-                int hola = DropDownList2.SelectedIndex;
-                MessageBox.Show(hola.ToString());
-                MessageBox.Show(caracteristicas + "\n" + "Precio: " + precio);
+                int index = DropDownList2.SelectedIndex;
+                if(index == 0)
+                {
+                    precio = precio + 400;
+                }
+                else
+                {
+                    precio = precio + 800;
+                }
+                caracteristicas = caracteristicas + "El diseño de la web: " + DropDownList2.SelectedValue + ".";
 
             }
             else
@@ -115,11 +125,47 @@ namespace aplicacion.usuarios
                 caracteristicas = "Nombre web = "+nombreweb.Value+", ";
                 caracteristicas = caracteristicas + "La pagina consta de: "+DropDownList1.SelectedValue+".";
                 comentarios = comentario.Value;
-                //if(DropDownList1.SelectedIndex)
-                precio = 500;
-                MessageBox.Show(analisisweb + ", " + nuevo + ", " + caracteristicas + ", " + comentarios);
+                int index = DropDownList1.SelectedIndex;
+                switch (index)
+                {
+                    case 0:
+                        precio = 100;
+                        break;
+                    case 1:
+                        precio = 250;
+                        break;
+                    case 2:
+                        precio = 500;
+                        break;
+                }
 
             }
+
+            string BDconexion = ConfigurationManager.ConnectionStrings["DBCreamostuweb"].ConnectionString;
+            SqlConnection conexion = new SqlConnection(BDconexion);
+
+            string strComandoSqlInsercionyDevuelveId = "";
+            int idProducto;
+            try
+            {
+                conexion.Open();
+
+                SqlCommand comando = conexion.CreateCommand();
+                comando.CommandText = strComandoSqlInsercionyDevuelveId;
+                idProducto = Convert.ToInt32(comando.ExecuteScalar());
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+
         }
     }
 }
