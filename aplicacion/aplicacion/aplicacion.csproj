@@ -91,6 +91,7 @@
     <Content Include="servicios.aspx" />
     <Content Include="usuarios\cabeceraUsuario.ascx" />
     <Content Include="usuarios\cuenta.aspx" />
+    <Content Include="usuarios\Mispedidos.aspx" />
     <Content Include="usuarios\Producto.aspx" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
@@ -180,6 +181,13 @@
     </Compile>
     <Compile Include="usuarios\cuenta.aspx.designer.cs">
       <DependentUpon>cuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios\Mispedidos.aspx.cs">
+      <DependentUpon>Mispedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarios\Mispedidos.aspx.designer.cs">
+      <DependentUpon>Mispedidos.aspx</DependentUpon>
     </Compile>
     <Compile Include="usuarios\Producto.aspx.cs">
       <DependentUpon>Producto.aspx</DependentUpon>

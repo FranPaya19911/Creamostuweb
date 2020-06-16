@@ -31,6 +31,7 @@ namespace aplicacion.usuarios
             
             string tipoDeproducto = (string)Session["producto"].ToString();
             int usuario = (int)Session["id"];
+            int idProducto;
 
             string caracteristicas, comentarios;
             decimal precio=0;
@@ -144,8 +145,9 @@ namespace aplicacion.usuarios
             string BDconexion = ConfigurationManager.ConnectionStrings["DBCreamostuweb"].ConnectionString;
             SqlConnection conexion = new SqlConnection(BDconexion);
 
-            string strComandoSqlInsercionyDevuelveId = "";
-            int idProducto;
+            string strComandoSqlInsercionyDevuelveId = "INSERT PRODUCTOS" + "(Caracteristicas, Precio, Nuevo, AnalisisWeb, Comentario, FkUsuario) VALUES(" + "'" + caracteristicas + "', '" + precio + "', '" + nuevo + "', '" + analisisweb + "', '" + comentarios + "', '"  + usuario + "'); SELECT SCOPE_IDENTITY();";
+            
+            
             try
             {
                 conexion.Open();
@@ -154,15 +156,22 @@ namespace aplicacion.usuarios
                 comando.CommandText = strComandoSqlInsercionyDevuelveId;
                 idProducto = Convert.ToInt32(comando.ExecuteScalar());
 
+                string strComandoSqlInsercionPedido = "INSERT PEDIDOS " + "(Estado,  FkUsuario, FkProducto) VALUES(" + "'Pendiente', '" + usuario + "', '" + idProducto + "'); ";
+
+                comando.CommandText = strComandoSqlInsercionPedido;
+                comando.ExecuteNonQuery();
 
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
+                string url = "Error.aspx";
+                HttpContext.Current.Response.Redirect(url);
             }
             finally
             {
                 conexion.Close();
+                string url = "../index.aspx";
+                HttpContext.Current.Response.Redirect(url);
             }
 
 
