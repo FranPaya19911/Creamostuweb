@@ -87,10 +87,10 @@
 <script type="text/javascript" src="js/footer.js"></script>
 <script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
 <script src="js/general.js"></script>
-<script> 
+<%--<script> 
     if ('<%= Session["user"].ToString() %>' != null) {
         var valores_sesion = '<%= Session["user"] %>' + ", " + '<%= Session["nombre"] %>' + ", " + '<%= Session["id"] %>';
         alert(valores_sesion);
     }
-</script>
+</script>--%>
 

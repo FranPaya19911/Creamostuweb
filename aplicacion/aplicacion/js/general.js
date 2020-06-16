@@ -36,6 +36,10 @@ function contenido(valor) {
     if (valor == "paginaweb") {
         document.getElementById("analisis").style.display = "none"
         document.getElementById("web").style.display = "block"
+
+        document.getElementById("nombreweb").removeAttribute("required");
+        document.getElementById("comentario").removeAttribute("required");
+
     } else {
         document.getElementById("web").style.display = "none"
         document.getElementById("analisis").style.display = "block"

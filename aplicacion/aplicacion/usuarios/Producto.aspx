@@ -45,10 +45,6 @@
                     <label>Comentario sobre análisis</label><br />
                     <textarea id="comentario" rows="6" cols="41" required="required" runat="server" placeholder="Ej: Quiero un análisis completo o ¿Qué quieres que analizamos de tú web concretamente?"></textarea><br />
                 </div>
-                
-        
-        
-        
         
                 <div id="web">
                     <label>Selecciona las Características:</label>
@@ -115,13 +111,7 @@
                           <asp:ListItem Selected="True" Value="soloPrincipal"> Plantilla estándar (Aspecto gráfico creado a través de una plantilla elegida por el cliente. Precio 400€.) </asp:ListItem>
                           <asp:ListItem Value="tiene2o3"> Plantilla personalizada (Aspecto gráfico creado por el cliente. Precio 800€.) </asp:ListItem>
                     </asp:DropDownList>
-
-
                 </div>
-
-
-
-
 
                 <asp:Button ID="buttonEnviar" class="btn-enviar" runat="server" Text="Button" OnClick="buttonEnviar_Click" />
             </form>
