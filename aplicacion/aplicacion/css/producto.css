@@ -47,3 +47,31 @@ input[type="submit"] {
     margin-bottom: 100px; 
     min-height:500px;
 }
+
+table {
+    margin:10px 0 20px 0;
+    background-color: white;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+table tr {
+    border: 1px solid #dddddd;
+    padding: 1%;
+}
+
+table th,
+table td {
+    padding: 2%;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+table th {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+table tr {
+    margin-bottom: 2%;
+}

@@ -51,7 +51,72 @@
         
         
                 <div id="web">
-                    hola
+                    <label>Selecciona las Características:</label>
+                    <table>
+                        <tr>
+                            <th>Nombre Producto</th>
+                            <th>Descripcion corta</th>
+                            <th>Seleccionar</th>
+                        </tr>
+                        <tr>
+                            <td>Página web base</td>
+                            <td>Creación página web base, incluye un inicio y un apartado de contacto. Precio 300€.</td>
+                            <td><input type="checkbox" id="pagbasico" runat="server"/></td>
+                        </tr>
+                        <tr>
+                            <td>Idioma adicional</td>
+                            <td>Inserción de un idioma extranjero en la página. Precio 200€ cada idioma.</td>
+                            <td><input type="number" id="idioma" max="10" min="0" runat="server"/></td>
+                        </tr>
+                        <tr>
+                            <td>Apartado noticias</td>
+                            <td>Un apartado de tipo noticias actualizable por el cliente. Precio 60€.</td>
+                            <td><input type="checkbox" id="noticia" runat="server"/></td>
+                        </tr>
+                        <tr>
+                            <td>Apartado blog</td>
+                            <td>Un apartado de tipo blog actualizable por el cliente. Precio 60€.</td>
+                            <td><input type="checkbox" id="blog" runat="server"/></td>
+                        </tr>
+                        <tr>
+                            <td>Galería fotográfica</td>
+                            <td>Creación y configuración de una galería fotográfica. Precio 50€.</td>
+                            <td><input type="checkbox" id="fotografia"  runat="server"/></td>
+                        </tr>
+                        <tr>
+                            <td>Galería vídeos</td>
+                            <td>Creación y configuración de una galería vídeos. Precio 70€.</td>
+                            <td><input type="checkbox" id="video" runat="server"/></td>
+                        </tr>
+                        <tr>
+                            <td>Apartado servicios</td>
+                            <td>Un apartado donde el cliente ofrece sus servicios. Precio 60€.</td>
+                            <td><input type="checkbox" id="servicio" runat="server"/></td>
+                        </tr>
+                        <tr>
+                            <td>Formulario</td>
+                            <td>Creación de cualquier tipo de formulario. Precio 50€ cada formulario.</td>
+                            <td><input type="number" id="formulario" max="99" min="0" runat="server"/></td>
+                        </tr>
+                        <tr>
+                            <td>Foro</td>
+                            <td>Creación de un foro con posibilidad de moderación y gestión de los usuarios. Precio 150€</td>
+                            <td><input type="checkbox" id="foro" runat="server" /></td>
+                        </tr>
+                        <tr>
+                            <td>Tienda online</td>
+                            <td>Página con catálogo de productos configurado para la venta online. Precio 900€</td>
+                            <td><input type="checkbox" id="tienda" runat="server"/></td>
+                        </tr>
+                    </table>
+
+                    <label>Escoge el tipo de diseño</label><br />
+                    <asp:DropDownList ID="DropDownList2" runat="server">
+                          <asp:ListItem Selected="True" Value="soloPrincipal"> Plantilla estándar (Aspecto gráfico creado a través de una plantilla elegida por el cliente. Precio 400€.) </asp:ListItem>
+                          <asp:ListItem Value="tiene2o3"> Plantilla personalizada (Aspecto gráfico creado por el cliente. Precio 800€.) </asp:ListItem>
+                    </asp:DropDownList>
+
+
                 </div>
 
 

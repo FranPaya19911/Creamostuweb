@@ -3,13 +3,13 @@
     <nav>
         <a href="index.aspx"><img id="logo" src="img/logo1.png" alt="logo"></a>
         <ul id="menu">
-            <li><a href="index.aspx">Inicio</a></li>
-            <li><a href="servicios.aspx">Servicios</a></li>
-            <li><a href="contacto.aspx">Contacto</a></li>
+            <li><a href="../index.aspx">Inicio</a></li>
+            <li><a href="../servicios.aspx">Servicios</a></li>
+            <li><a href="../contacto.aspx">Contacto</a></li>
         </ul>
         <div id="usuario" class="prueba">
             <a  href="#">
-            <span><input type="text" class="buttoniniciar"  value="Administrador" /></span>
+            <span><input type="text" class="buttoniniciar"  value="Administrador" disabled/></span>
             </a>
 
             <ul class="submenu ">
@@ -17,7 +17,7 @@
                 <li><a href="#">Chat Clientes</a></li>
                 <li><a href="#">Peticiones</a></li>
                 <li><a href="#">Incidencia</a></li>
-                <li><a href="CerrarSesion.aspx">Cerrar Sesión</a></li>
+                <li><a href="../CerrarSesion.aspx">Cerrar Sesión</a></li>
             </ul>
 
         </div>
