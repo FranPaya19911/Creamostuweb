@@ -123,7 +123,7 @@ namespace aplicacion.usuarios
             {
                 analisisweb = true;
                 nuevo = false;
-                caracteristicas = "Nombre web = "+nombreweb.Value+", ";
+                caracteristicas = "Nombre web: "+nombreweb.Value+", ";
                 caracteristicas = caracteristicas + "La pagina consta de: "+DropDownList1.SelectedValue+".";
                 comentarios = comentario.Value;
                 int index = DropDownList1.SelectedIndex;

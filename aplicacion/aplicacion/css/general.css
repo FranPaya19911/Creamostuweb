@@ -17,7 +17,9 @@ p {
     text-align:justify;
 }
 
-label {
+label,
+input,
+option{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -156,9 +158,10 @@ footer {
 }
 
 footer a {
-    margin-top: 1%;
+    margin-top: 2%;
     text-decoration: none;
     color: white;
+    margin-bottom: 2%;
 }
 
 footer a em:hover {
@@ -167,7 +170,7 @@ footer a em:hover {
 
 footer p {
     text-align: center;
-    margin-bottom:1%;
+    margin-bottom:2%;
 }
 
 footer small {

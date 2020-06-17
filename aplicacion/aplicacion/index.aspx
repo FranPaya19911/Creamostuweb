@@ -41,7 +41,15 @@
                 <p>Tú empresa de desarrollo web de confianza</p>
             </div>
         </div>
-
+        <div class="texto">
+            <p>
+               Somos una empresa que se dedica a la creación de páginas web a 
+                medida para nuestros clientes, también ofrecemos la posibilidad de
+                modificar una creada por nosotros en cualquier momento y de modificar
+                una que no haya sido creada por nosotros también para ello tenemos la
+                opción de analizar tú web.
+            </p>
+        </div>
         <div class="contenedor">
             <div>
                 <img src="img/Resposive.png" alt="Responsive" />

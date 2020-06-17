@@ -12,4 +12,5 @@
         <div class="flecha">
             <i title="Ir arriba" class="fas fa-arrow-alt-circle-up"></i>
         </div>
+        <br />
 </footer>

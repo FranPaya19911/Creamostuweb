@@ -113,7 +113,7 @@
                     </asp:DropDownList>
                 </div>
 
-                <asp:Button ID="buttonEnviar" class="btn-enviar" runat="server" Text="Button" OnClick="buttonEnviar_Click" />
+                <asp:Button ID="buttonEnviar" class="btn-enviar" runat="server" Text="Enviar" OnClick="buttonEnviar_Click" />
             </form>
         </div>
     </div>

@@ -7,6 +7,11 @@
     background-color: black;
 }
 
+.texto{
+    margin: 20px 0;
+    text-align:justify;
+}
+
 #contenedor-parallax {
     background-image: url('../img/parallax-inicio.png');
 }
