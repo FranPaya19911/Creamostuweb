@@ -37,9 +37,9 @@
 
                     <label>Como de grande es tu web</label><br />
                     <asp:DropDownList ID="DropDownList1" runat="server">
-                          <asp:ListItem Selected="True" Value="soloPrincipal"> Solo tiene una página principal</asp:ListItem>
-                          <asp:ListItem Value="tiene2o3"> Tiene de dos a tres páginas </asp:ListItem>
-                          <asp:ListItem Value="tiene4omas"> Tiene 4 o más páginas </asp:ListItem>
+                          <asp:ListItem Selected="True" Value="solo Principal"> Solo tiene una página principal</asp:ListItem>
+                          <asp:ListItem Value="tiene 2 o 3"> Tiene de dos a tres páginas </asp:ListItem>
+                          <asp:ListItem Value="tiene 4 o mas"> Tiene 4 o más páginas </asp:ListItem>
                     </asp:DropDownList><br />
 
                     <label>Comentario sobre análisis</label><br />
@@ -108,8 +108,8 @@
 
                     <label>Escoge el tipo de diseño</label><br />
                     <asp:DropDownList ID="DropDownList2" runat="server">
-                          <asp:ListItem Selected="True" Value="PlantillaEstandar"> Plantilla estándar (Aspecto gráfico creado a través de una plantilla elegida por el cliente. Precio 400€.) </asp:ListItem>
-                          <asp:ListItem Value="PlantillaPersonalizada"> Plantilla personalizada (Aspecto gráfico creado por el cliente. Precio 800€.) </asp:ListItem>
+                          <asp:ListItem Selected="True" Value="Plantilla Estandar"> Plantilla estándar (Aspecto gráfico creado a través de una plantilla elegida por el cliente. Precio 400€.) </asp:ListItem>
+                          <asp:ListItem Value="Plantilla Personalizada"> Plantilla personalizada (Aspecto gráfico creado por el cliente. Precio 800€.) </asp:ListItem>
                     </asp:DropDownList>
                 </div>
 

@@ -90,6 +90,7 @@
     <Content Include="registro.aspx" />
     <Content Include="servicios.aspx" />
     <Content Include="usuarios\cabeceraUsuario.ascx" />
+    <Content Include="usuarios\CrearIncidencia.aspx" />
     <Content Include="usuarios\CrearPeticion.aspx" />
     <Content Include="usuarios\cuenta.aspx" />
     <Content Include="usuarios\Mispedidos.aspx" />
@@ -175,6 +176,13 @@
     </Compile>
     <Compile Include="usuarios\cabeceraUsuario.ascx.designer.cs">
       <DependentUpon>cabeceraUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios\CrearIncidencia.aspx.cs">
+      <DependentUpon>CrearIncidencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarios\CrearIncidencia.aspx.designer.cs">
+      <DependentUpon>CrearIncidencia.aspx</DependentUpon>
     </Compile>
     <Compile Include="usuarios\CrearPeticion.aspx.cs">
       <DependentUpon>CrearPeticion.aspx</DependentUpon>

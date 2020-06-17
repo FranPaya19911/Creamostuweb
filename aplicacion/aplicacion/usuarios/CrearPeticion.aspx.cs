@@ -30,8 +30,10 @@ namespace aplicacion.usuarios
         {
             int usuario = (int)Session["id"];
             string tipo, comentarios;
+
             tipo = "Tipo de Petición: " + DropDownList1.SelectedValue + ".";
             comentarios = comentario.Value;
+
             string BDconexion = ConfigurationManager.ConnectionStrings["DBCreamostuweb"].ConnectionString;
             SqlConnection conexion = new SqlConnection(BDconexion);
 
@@ -52,7 +54,7 @@ namespace aplicacion.usuarios
             finally
             {
                 conexion.Close();
-                string url = "Mispedidos.aspx";
+                string url = "../index.aspx";
                 HttpContext.Current.Response.Redirect(url);
             }
         }

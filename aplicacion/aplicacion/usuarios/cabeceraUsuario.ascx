@@ -13,11 +13,10 @@
             </a>
 
             <ul class="submenu ">
-                <li><a href="#">Cuenta</a></li>
                 <li><a href="/usuarios/Mispedidos.aspx">Mis pedidos</a></li>
                 <li><a href="#">Chat Support</a></li>
                 <li><a href="/usuarios/CrearPeticion.aspx">Crear petición</a></li>
-                <li><a href="#">Crear incidencia</a></li>
+                <li><a href="/usuarios/CrearIncidencia.aspx">Crear incidencia</a></li>
                 <li><a href="../CerrarSesion.aspx">Cerrar Sesión</a></li>
             </ul>
 

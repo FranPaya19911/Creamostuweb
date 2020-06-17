@@ -43,11 +43,11 @@ namespace aplicacion.usuarios
                 nuevo = true;
                 comentarios = "vacio";
 
-                caracteristicas = "Caracteristicas:";
+                caracteristicas = "Caracteristicas: ";
                 
                 if(pagbasico.Checked)
                 {
-                    caracteristicas = caracteristicas + "Paginabasicaweb";
+                    caracteristicas = caracteristicas + "Paginabasicaweb, ";
                     precio = precio + 300;
                 }
                 if(idioma.Value !=  "")
@@ -55,7 +55,7 @@ namespace aplicacion.usuarios
                     int idiomas = Int32.Parse(idioma.Value);
                     if(idiomas > 0)
                     {
-                        caracteristicas = caracteristicas + ", Cantidad de idiomas: "+ idiomas;
+                        caracteristicas = caracteristicas + "Cantidad de idiomas: "+ idiomas +", ";
                         idiomas = 200 * idiomas;
                         precio = precio + idiomas;
                     }
@@ -63,28 +63,28 @@ namespace aplicacion.usuarios
                 }
                 if(noticia.Checked)
                 {
-                    caracteristicas = caracteristicas + ", Apartado noticias";
+                    caracteristicas = caracteristicas + "Apartado noticias, ";
                     precio = precio + 60;
                 }
                 if (blog.Checked)
                 {
-                    caracteristicas = caracteristicas + ", Apartado blog";
+                    caracteristicas = caracteristicas + "Apartado blog, ";
                     precio = precio + 60;
                 }
 
                 if (fotografia.Checked)
                 {
-                    caracteristicas = caracteristicas + ", Apartado de fotografia";
+                    caracteristicas = caracteristicas + "Apartado de fotografia, ";
                     precio = precio + 50;
                 }
                 if (video.Checked)
                 {
-                    caracteristicas = caracteristicas + ", Apartado de videos";
+                    caracteristicas = caracteristicas + "Apartado de videos, ";
                     precio = precio + 70;
                 }
                 if (servicio.Checked)
                 {
-                    caracteristicas = caracteristicas + ", Apartado de servicios";
+                    caracteristicas = caracteristicas + "Apartado de servicios, ";
                     precio = precio + 60;
                 }
                 if (formulario.Value != "")
@@ -92,19 +92,19 @@ namespace aplicacion.usuarios
                     int formularios = Int32.Parse(formulario.Value);
                     if (formularios > 0)
                     {
-                        caracteristicas = caracteristicas + ", Cantidad de formularios: " + formularios;
+                        caracteristicas = caracteristicas + "Cantidad de formularios: " + formularios + ", ";
                         formularios = 200 * formularios;
                         precio = precio + formularios;
                     }
                 }
                 if (foro.Checked)
                 {
-                    caracteristicas = caracteristicas + ", Apartado de foro";
+                    caracteristicas = caracteristicas + "Apartado de foro, ";
                     precio = precio + 150;
                 }
                 if (tienda.Checked)
                 {
-                    caracteristicas = caracteristicas + ", Apartado de tienda online";
+                    caracteristicas = caracteristicas + "Apartado de tienda online, ";
                     precio = precio + 900;
                 }
                 int index = DropDownList2.SelectedIndex;
@@ -124,7 +124,7 @@ namespace aplicacion.usuarios
                 analisisweb = true;
                 nuevo = false;
                 caracteristicas = "Nombre web: "+nombreweb.Value+", ";
-                caracteristicas = caracteristicas + "La pagina consta de: "+DropDownList1.SelectedValue+".";
+                caracteristicas = caracteristicas + "La pagina consta de: "+DropDownList1.SelectedValue+" paginas.";
                 comentarios = comentario.Value;
                 int index = DropDownList1.SelectedIndex;
                 switch (index)

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
+<head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="../css/general.css" rel="stylesheet" />
     <link href="../css/contacto.css" rel="stylesheet" />
@@ -25,7 +25,7 @@
            
                 <h1 class="tittle-form titulo"> Petición </h1>
            
-                <div id="analisis">
+                <div>
                         <label>Tipo de Petición: </label><br />
                         <asp:DropDownList ID="DropDownList1" runat="server">
                               <asp:ListItem Selected="True" Value="modificacion">Una modificanción de un producto</asp:ListItem>
