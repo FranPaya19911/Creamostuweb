@@ -35,7 +35,7 @@
                         <textarea id="comentario" rows="6" cols="41" required="required" runat="server" aria-required="true"></textarea><br />
 
                         <label>Danos tú valoración sobre nuestra página web: </label><br />
-                    <input type="number" id="valoracion" max="10" min="1"  runat="server" placeholder="la nota va de 1 a 10" class="input"/><br />
+                    <input type="number" id="valoracion" max="10" min="0"  runat="server" placeholder="la nota va de 0 a 10" class="input"/><br />
                 </div>
 
                 <asp:Button ID="GenerarIncidencia" class="btn-enviar" runat="server" Text="Enviar" OnClick="GenerarIncidencia_Click" />

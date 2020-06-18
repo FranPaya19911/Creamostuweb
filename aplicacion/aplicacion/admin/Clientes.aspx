@@ -19,6 +19,8 @@
     </div>
     <div id="invitado"></div>
     <div class="main">
+        <h1>Clientes</h1>
+        <br />
         <form id="form1" runat="server">
             <div>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBCreamostuweb %>" SelectCommand="SELECT [Nombre], [Correo], [TipoDeUsuario], [UsuarioId] FROM [USUARIOS] WHERE (([TipoDeUsuario] = @TipoDeUsuario) AND ([Activo] = @Activo))">
@@ -28,14 +30,14 @@
                     </SelectParameters>
                 </asp:SqlDataSource>
 
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" DataKeyNames="UsuarioId" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" DataKeyNames="UsuarioId" AutoGenerateColumns="False" DataSourceID="SqlDataSource1"  PageSize="5">
                     <Columns>
                         <asp:CommandField ShowSelectButton="True" HeaderText="ver pedidos del usuario" />
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
                         <asp:BoundField DataField="Correo" HeaderText="Correo" SortExpression="Correo" />
                         <asp:BoundField DataField="TipoDeUsuario" HeaderText="TipoDeUsuario" SortExpression="TipoDeUsuario" />
                     </Columns>
-                    <PagerSettings FirstPageText="Primero" LastPageText="Última" Mode="NextPreviousFirstLast" NextPageText="Siguiente" PreviousPageText="Anterior" />
+                    <PagerSettings FirstPageText="Primera" LastPageText="Última" Mode="NextPreviousFirstLast" NextPageText="Siguiente" PreviousPageText="Anterior" />
                 </asp:GridView>
             </div>
             <div>

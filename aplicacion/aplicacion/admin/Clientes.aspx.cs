@@ -11,7 +11,15 @@ namespace aplicacion.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"] != null)
+            {
+                string valor = (string)Session["user"].ToString();
+                if (valor != "admin")
+                {
+                    string url = "../Error.aspx";
+                    HttpContext.Current.Response.Redirect(url);
+                }
+            }
         }
     }
 }

@@ -30,19 +30,19 @@ namespace aplicacion.usuarios
         {
             int usuario = (int)Session["id"];
             string tipo, comentarios;
-            int valoration = 0;
+            int valoration;
             bool valor;
-            string nota = "";
-
-            tipo = "Tipo de Petición: " + DropDownList1.SelectedValue + ".";
+            string url ="";
+            tipo = DropDownList1.SelectedValue + ".";
             comentarios = comentario.Value;
+           
             if(valoracion.Value != "")
             {
                 valoration = Int32.Parse(valoracion.Value);
                 valor = true;
             }
             else{
-                nota = valoracion.Value;
+                
                 valor = false;
             }
 
@@ -58,26 +58,26 @@ namespace aplicacion.usuarios
             }
             else
             {
-                strComandoSqlInsercion = "INSERT INCIDENCIAS" + "(Tipo, Comentario, Valoracion, FkUsuario) VALUES(" + "'" + tipo + "', '" + comentarios + "', '" + nota + "', '" + usuario + "'); ";
+                strComandoSqlInsercion = "INSERT INCIDENCIAS" + "(Tipo, Comentario, FkUsuario) VALUES(" + "'" + tipo + "', '" + comentarios + "',' " + usuario + "'); ";
             }
-            
 
+        
             try
             {
                 conexion.Open();
                 SqlCommand comando = conexion.CreateCommand();
                 comando.CommandText = strComandoSqlInsercion;
                 comando.ExecuteNonQuery();
+
+                 url = "../index.aspx";
             }
-            catch
+            catch (Exception)
             {
-                string url = "Error.aspx";
-                HttpContext.Current.Response.Redirect(url);
+                 url = "../Error.aspx";
             }
             finally
             {
                 conexion.Close();
-                string url = "../index.aspx";
                 HttpContext.Current.Response.Redirect(url);
             }
         }

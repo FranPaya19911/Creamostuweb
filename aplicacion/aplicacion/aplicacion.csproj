@@ -70,6 +70,8 @@
   <ItemGroup>
     <Content Include="admin\cabeceraAdmin.ascx" />
     <Content Include="admin\Clientes.aspx" />
+    <Content Include="admin\Incidencias.aspx" />
+    <Content Include="admin\Peticiones.aspx" />
     <Content Include="App_Data\DBCreamostuweb.mdf" />
     <Content Include="App_Data\DBCreamostuweb_log.ldf">
       <DependentUpon>DBCreamostuweb.mdf</DependentUpon>
@@ -113,6 +115,20 @@
     </Compile>
     <Compile Include="admin\Clientes.aspx.designer.cs">
       <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Incidencias.aspx.cs">
+      <DependentUpon>Incidencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Incidencias.aspx.designer.cs">
+      <DependentUpon>Incidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Peticiones.aspx.cs">
+      <DependentUpon>Peticiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Peticiones.aspx.designer.cs">
+      <DependentUpon>Peticiones.aspx</DependentUpon>
     </Compile>
     <Compile Include="cabezera.ascx.cs">
       <DependentUpon>cabezera.ascx</DependentUpon>

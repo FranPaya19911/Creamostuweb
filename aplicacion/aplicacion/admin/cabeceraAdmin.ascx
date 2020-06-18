@@ -14,8 +14,8 @@
             <ul class="submenu ">
                 <li><a href="/admin/clientes.aspx">Clientes</a></li>
                 <li><a href="#">Chat Clientes</a></li>
-                <li><a href="#">Peticiones</a></li>
-                <li><a href="#">Incidencia</a></li>
+                <li><a href="/admin/Peticiones.aspx">Peticiones</a></li>
+                <li><a href="/admin/Incidencias.aspx">Incidencia</a></li>
                 <li><a href="../CerrarSesion.aspx">Cerrar Sesión</a></li>
             </ul>
 
