@@ -30,9 +30,10 @@ namespace aplicacion.usuarios
         {
             int usuario = (int)Session["id"];
             string tipo, comentarios;
-            int valoration;
+            int valoration = 0;
             bool valor;
             string url ="";
+
             tipo = DropDownList1.SelectedValue + ".";
             comentarios = comentario.Value;
            
