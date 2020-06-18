@@ -30,6 +30,7 @@ namespace aplicacion.usuarios
         {
             int usuario = (int)Session["id"];
             string tipo, comentarios;
+            string url = "";
 
             tipo =  DropDownList1.SelectedValue + ".";
             comentarios = comentario.Value;
@@ -45,16 +46,17 @@ namespace aplicacion.usuarios
                 SqlCommand comando = conexion.CreateCommand();
                 comando.CommandText = strComandoSqlInsercion;
                 comando.ExecuteNonQuery();
+               
+                url = "../index.aspx";
             }
             catch 
             {
-                string url = "Error.aspx";
-                HttpContext.Current.Response.Redirect(url);
+                url = "../Error.aspx";
             }
             finally
             {
                 conexion.Close();
-                string url = "../index.aspx";
+                
                 HttpContext.Current.Response.Redirect(url);
             }
         }

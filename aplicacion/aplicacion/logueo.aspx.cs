@@ -33,6 +33,7 @@ namespace aplicacion
             int id = 0;
             string nombre = "";
             bool VariablesDeSession = false;
+             string url = "";
 
             string BDconexion = ConfigurationManager.ConnectionStrings["DBCreamostuweb"].ConnectionString;
             SqlConnection conexion = new SqlConnection(BDconexion);
@@ -50,6 +51,8 @@ namespace aplicacion
                 comando.CommandText = strComandSqlConsulta;
                 SqlDataReader dr = comando.ExecuteReader();
 
+                 
+
                 if (dr.Read())
                 {
                     dr.Close();
@@ -61,6 +64,7 @@ namespace aplicacion
                     nombre = (comando.ExecuteScalar()).ToString();
 
                     VariablesDeSession = true;
+                    
                 }
                 else
                 {
@@ -70,8 +74,7 @@ namespace aplicacion
             }
             catch
             {
-                string url = "Error.aspx";
-                HttpContext.Current.Response.Redirect(url);
+                 url = "Error.aspx";
             }
             finally
             {
@@ -94,9 +97,10 @@ namespace aplicacion
                     Session["id"] = id;
                     Session["nombre"] = nombre;
 
-                    string url = "index.aspx";
-                    HttpContext.Current.Response.Redirect(url);
+                    url = "index.aspx";
                 }
+
+                HttpContext.Current.Response.Redirect(url);
             }
 
         }

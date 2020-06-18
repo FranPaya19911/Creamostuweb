@@ -36,8 +36,9 @@ namespace aplicacion.usuarios
             string caracteristicas, comentarios;
             decimal precio=0;
             bool analisisweb, nuevo;
+            string url = "";
 
-            if(tipoDeproducto == "paginaweb")
+            if (tipoDeproducto == "paginaweb")
             {
                 analisisweb = false;
                 nuevo = true;
@@ -161,16 +162,16 @@ namespace aplicacion.usuarios
                 comando.CommandText = strComandoSqlInsercionPedido;
                 comando.ExecuteNonQuery();
 
+                 url = "Mispedidos.aspx";
+
             }
             catch
             {
-                string url = "Error.aspx";
-                HttpContext.Current.Response.Redirect(url);
+                url = "../Error.aspx";
             }
             finally
             {
                 conexion.Close();
-                string url = "Mispedidos.aspx";
                 HttpContext.Current.Response.Redirect(url);
             }
 
