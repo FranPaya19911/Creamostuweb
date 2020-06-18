@@ -21,15 +21,19 @@
     <div class="main">
         <form id="form1" runat="server">
             <div>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBCreamostuweb %>" SelectCommand="SELECT [Nombre], [Correo], [TipoDeUsuario] FROM [USUARIOS]">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBCreamostuweb %>" SelectCommand="SELECT [Nombre], [Correo], [TipoDeUsuario], [UsuarioId] FROM [USUARIOS] WHERE (([TipoDeUsuario] = @TipoDeUsuario) AND ([Activo] = @Activo))">
+                    <SelectParameters>
+                        <asp:Parameter DefaultValue="usuario" Name="TipoDeUsuario" Type="String" />
+                        <asp:Parameter DefaultValue="true" Name="Activo" Type="Boolean" />
+                    </SelectParameters>
                 </asp:SqlDataSource>
 
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" DataKeyNames="UsuarioId" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
                     <Columns>
-                        <asp:CommandField HeaderText="Ver pedidios del usuario" ShowSelectButton="True" />
+                        <asp:CommandField ShowSelectButton="True" HeaderText="ver pedidos del usuario" />
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
                         <asp:BoundField DataField="Correo" HeaderText="Correo" SortExpression="Correo" />
-                        <asp:BoundField DataField="TipoDeUsuario" HeaderText="Tipo De Usuario" SortExpression="TipoDeUsuario" />
+                        <asp:BoundField DataField="TipoDeUsuario" HeaderText="TipoDeUsuario" SortExpression="TipoDeUsuario" />
                     </Columns>
                     <PagerSettings FirstPageText="Primero" LastPageText="Última" Mode="NextPreviousFirstLast" NextPageText="Siguiente" PreviousPageText="Anterior" />
                 </asp:GridView>
