@@ -40,20 +40,7 @@
                     <PagerSettings FirstPageText="Primera" LastPageText="Última" Mode="NextPreviousFirstLast" NextPageText="Siguiente" PreviousPageText="Anterior" />
                 </asp:GridView>
             </div>
-            <div id="Pedidoscliente" runat="server">
-                <%--<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DBCreamostuweb %>" SelectCommand="SELECT [Estado], [FkUsuario] FROM [PEDIDOS] WHERE ([FkUsuario] = @FkUsuario)">
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="GridView1" Name="FkUsuario" PropertyName="SelectedValue" Type="Int32" />
-                    </SelectParameters>
-                </asp:SqlDataSource>
-
-                <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2">
-                    <Columns>
-                        <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
-                        <asp:BoundField DataField="FkUsuario" HeaderText="FkUsuario" SortExpression="FkUsuario" />
-                    </Columns>
-                </asp:GridView>--%>
-            </div>
+            <div id="Pedidoscliente" runat="server"></div>
         </form>
     </div>
     <div>
