@@ -27,8 +27,8 @@
             <asp:Button ID="Paginaweb" runat="server" CssClass="btn-mis" Text="Pagina Web" OnClick="Paginaweb_Click" /><br />
             <asp:Button ID="Analisis" runat="server" CssClass="btn-mis" Text="Analisis" OnClick="Analisis_Click" /><br />
             </div>
-            
-            <asp:SqlDataSource ID="producto" runat="server" ConnectionString="<%$ ConnectionStrings:DBCreamostuweb %>" OnSelecting="producto_Selecting" SelectCommand="select pro.Caracteristicas, pro.Precio, pro.Nuevo, pro.AnalisisWeb, pro.Comentario, pe.Estado from PRODUCTOS as pro INNER JOIN PEDIDOS as pe ON pro.ProductoId = pe.FkProducto where pro.FkUsuario = @id">
+            <div id="Mispedidostabla" runat="server"></div>
+            <%--<asp:SqlDataSource ID="producto" runat="server" ConnectionString="<%$ ConnectionStrings:DBCreamostuweb %>" OnSelecting="producto_Selecting" SelectCommand="select pro.Caracteristicas, pro.Precio, pro.Nuevo, pro.AnalisisWeb, pro.Comentario, pe.Estado from PRODUCTOS as pro INNER JOIN PEDIDOS as pe ON pro.ProductoId = pe.FkProducto where pro.FkUsuario = @id">
                 <SelectParameters>
                     <asp:SessionParameter SessionField="id" Name="id" />
                 </SelectParameters>
@@ -44,7 +44,7 @@
                     <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
                 </Columns>
 
-            </asp:GridView>
+            </asp:GridView>--%>
         </form>
     </div>
     <div>

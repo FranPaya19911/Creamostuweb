@@ -75,6 +75,7 @@ namespace aplicacion
             catch
             {
                  url = "Error.aspx";
+                HttpContext.Current.Response.Redirect(url);
             }
             finally
             {
@@ -98,9 +99,10 @@ namespace aplicacion
                     Session["nombre"] = nombre;
 
                     url = "index.aspx";
+                    HttpContext.Current.Response.Redirect(url);
                 }
 
-                HttpContext.Current.Response.Redirect(url);
+                
             }
 
         }
