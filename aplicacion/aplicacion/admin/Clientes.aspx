@@ -30,7 +30,7 @@
                     </SelectParameters>
                 </asp:SqlDataSource>
 
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" DataKeyNames="UsuarioId" AutoGenerateColumns="False" DataSourceID="SqlDataSource1"  PageSize="5">
+                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" DataKeyNames="UsuarioId" AutoGenerateColumns="False" DataSourceID="SqlDataSource1"  PageSize="5" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                     <Columns>
                         <asp:CommandField ShowSelectButton="True" HeaderText="ver pedidos del usuario" />
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
@@ -40,8 +40,8 @@
                     <PagerSettings FirstPageText="Primera" LastPageText="Última" Mode="NextPreviousFirstLast" NextPageText="Siguiente" PreviousPageText="Anterior" />
                 </asp:GridView>
             </div>
-            <div>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DBCreamostuweb %>" SelectCommand="SELECT [Estado], [FkUsuario] FROM [PEDIDOS] WHERE ([FkUsuario] = @FkUsuario)">
+            <div id="Pedidoscliente" runat="server">
+                <%--<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DBCreamostuweb %>" SelectCommand="SELECT [Estado], [FkUsuario] FROM [PEDIDOS] WHERE ([FkUsuario] = @FkUsuario)">
                     <SelectParameters>
                         <asp:ControlParameter ControlID="GridView1" Name="FkUsuario" PropertyName="SelectedValue" Type="Int32" />
                     </SelectParameters>
@@ -52,7 +52,7 @@
                         <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
                         <asp:BoundField DataField="FkUsuario" HeaderText="FkUsuario" SortExpression="FkUsuario" />
                     </Columns>
-                </asp:GridView>
+                </asp:GridView>--%>
             </div>
         </form>
     </div>

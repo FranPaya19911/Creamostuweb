@@ -12,8 +12,8 @@
 DECLARE @valor VARCHAR(50) = 'analisis'; 
 DECLARE @valor2 VARCHAR(50) = 'Pagina web'; 
 
-select u.Nombre, pr.AnalisisWeb, pr.Nuevo, p.Estado from PEDIDOS as p
-inner join USUARIOS as u on p.FkUsuario = u.UsuarioId inner join PRODUCTOS as pr on  p.FkProducto  = pr.ProductoId
+select u.Nombre, pr.Caracteristicas, pr.Nuevo, p.Estado from PEDIDOS as p
+inner join USUARIOS as u on p.FkUsuario = u.UsuarioId inner join PRODUCTOS as pr on  p.FkProducto  = pr.ProductoId where p.FkUsuario = 2;
 
 
 where  @valor = (
