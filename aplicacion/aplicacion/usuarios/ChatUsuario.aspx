@@ -24,39 +24,12 @@
                     Chat con soporte
                 </div>
             </div>
-            <main id="divu" class="chat-main">
-                <%--visitante
-                    <div class="men left-men">
-                    <div class="men-contenedor">
-                        <div class="men-info">
-                            <div class="men-info-nombre">BOT</div>
-                            <div class="men-info-tiempo">12:45</div>
-                        </div>
-
-                        <div class="men-texto">
-                            Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
-                        </div>
-                    </div>
-                </div>--%>
-
-                <%--local
-                    <div class="men right-men">
-                    <div class="men-contenedor">
-                        <div class="men-info">
-                            <div class="men-info-nombre">Sajad</div>
-                            <div class="men-info-tiempo">12:46</div>
-                        </div>
-
-                        <div class="men-texto">
-                            You can change your name in JS section!
-                        </div>
-                    </div>
-                </div>--%>
+            <main id="divu" class="chat-main" runat="server">
                 
             </main>
             <form class="men-inputarea" id="form1" runat="server">
-                <input type="text" class="men-input" placeholder="Escriba su mensaje..." />
-                <asp:Button ID="Button1" class="men-send-btn" runat="server" Text="Enviar" />
+                <input id="mensaje" type="text" class="men-input" placeholder="Escriba su mensaje..." runat="server" required="required" />
+                <asp:Button ID="Button1" class="men-send-btn" runat="server" Text="Enviar" OnClick="Button1_Click" />
             </form>
         </section>
     </div>
