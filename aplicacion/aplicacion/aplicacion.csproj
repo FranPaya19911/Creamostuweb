@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\cabeceraAdmin.ascx" />
+    <Content Include="admin\chat.aspx" />
     <Content Include="admin\Clientes.aspx" />
     <Content Include="admin\Incidencias.aspx" />
     <Content Include="admin\Peticiones.aspx" />
@@ -110,6 +111,13 @@
     </Compile>
     <Compile Include="admin\cabeceraAdmin.ascx.designer.cs">
       <DependentUpon>cabeceraAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\chat.aspx.cs">
+      <DependentUpon>chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\chat.aspx.designer.cs">
+      <DependentUpon>chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\Clientes.aspx.cs">
       <DependentUpon>Clientes.aspx</DependentUpon>

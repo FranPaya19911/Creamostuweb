@@ -25,7 +25,8 @@
                 </div>
             </div>
             <main id="divu" class="chat-main">
-                <div class="men left-men">
+                <%--visitante
+                    <div class="men left-men">
                     <div class="men-contenedor">
                         <div class="men-info">
                             <div class="men-info-nombre">BOT</div>
@@ -36,9 +37,10 @@
                             Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
                         </div>
                     </div>
-                </div>
+                </div>--%>
 
-                <div class="men right-men">
+                <%--local
+                    <div class="men right-men">
                     <div class="men-contenedor">
                         <div class="men-info">
                             <div class="men-info-nombre">Sajad</div>
@@ -49,7 +51,7 @@
                             You can change your name in JS section!
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 
             </main>
             <form class="men-inputarea" id="form1" runat="server">

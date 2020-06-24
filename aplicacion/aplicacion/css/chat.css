@@ -18,13 +18,36 @@
     align-items: center;
 }
 
+.side-bar {
+    background-color: #fff;
+    height: 94%;
+    width: 275px;
+    margin: 25px 0px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.usuario{
+    margin: 5px 0 5px 10px;
+}
+
+.usuario input{
+    width:100%;
+    padding:5px;
+    border: 0;
+    
+}
+.usuario input[disabled]{
+    background-color:#fff;
+}
+
 .chat {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     width: 100%;
     max-width: 867px;
-    margin: 25px 10px;
+    margin: 25px 0px;
     height: calc(100% - 50px);
     border: 2px solid #ddd;
     border-radius: 5px;
@@ -47,17 +70,17 @@
     overflow-y: scroll;
 }
 
-    .chat-main::-webkit-scrollbar {
-        width: 6px;
-    }
+.chat-main::-webkit-scrollbar {
+    width: 6px;
+}
 
-    .chat-main::-webkit-scrollbar-track {
-        background: #ddd;
-    }
+.chat-main::-webkit-scrollbar-track {
+    background: #ddd;
+}
 
-    .chat-main::-webkit-scrollbar-thumb {
-        background: #bdbdbd;
-    }
+.chat-main::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+}
 
 .men {
     display: flex;
@@ -65,9 +88,9 @@
     margin-bottom: 10px;
 }
 
-    .men:last-of-type {
-        margin: 0;
-    }
+.men:last-of-type {
+    margin: 0;
+}
 
 .men-contenedor {
     max-width: 450px;
@@ -100,15 +123,15 @@
     flex-direction: row-reverse;
 }
 
-    .right-men .men-contenedor {
-        background-color: #579ffb;
-        color: #fff;
-        border-bottom-right-radius: 0;
-    }
+.right-men .men-contenedor {
+    background-color: #579ffb;
+    color: #fff;
+    border-bottom-right-radius: 0;
+}
 
-    .right-men .msg-img {
-        margin: 0 0 0 10px;
-    }
+.right-men .msg-img {
+    margin: 0 0 0 10px;
+}
 
 .men-inputarea {
     display: flex;
@@ -117,12 +140,12 @@
     background: #eee;
 }
 
-    .men-inputarea * {
-        padding: 10px;
-        border: none;
-        border-radius: 3px;
-        font-size: 1em;
-    }
+.men-inputarea * {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+}
 
 .men-input {
     flex: 1;
@@ -138,6 +161,6 @@
     transition: background 0.23s;
 }
 
-    .men-send-btn:hover {
-        background: rgb(0, 180, 50);
-    }
+.men-send-btn:hover {
+    background: rgb(0, 180, 50);
+}
