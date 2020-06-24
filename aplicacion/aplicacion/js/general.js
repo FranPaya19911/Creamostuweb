@@ -45,3 +45,10 @@ function contenido(valor) {
         document.getElementById("analisis").style.display = "block"
     }
 }
+
+
+function AbajoArriba() {
+    var e = document.getElementById('divu');
+    var objDiv = document.getElementById("divu");
+    objDiv.scrollTop = objDiv.scrollHeight;
+}

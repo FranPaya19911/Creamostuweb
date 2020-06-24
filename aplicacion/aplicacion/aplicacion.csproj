@@ -79,6 +79,7 @@
     <Content Include="cabezera.ascx" />
     <Content Include="CerrarSesion.aspx" />
     <Content Include="contacto.aspx" />
+    <Content Include="css\chat.css" />
     <Content Include="css\contacto.css" />
     <Content Include="css\Inicio.css" />
     <Content Include="css\producto.css" />
@@ -93,6 +94,7 @@
     <Content Include="registro.aspx" />
     <Content Include="servicios.aspx" />
     <Content Include="usuarios\cabeceraUsuario.ascx" />
+    <Content Include="usuarios\ChatUsuario.aspx" />
     <Content Include="usuarios\CrearIncidencia.aspx" />
     <Content Include="usuarios\CrearPeticion.aspx" />
     <Content Include="usuarios\cuenta.aspx" />
@@ -200,6 +202,13 @@
     </Compile>
     <Compile Include="usuarios\cabeceraUsuario.ascx.designer.cs">
       <DependentUpon>cabeceraUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios\ChatUsuario.aspx.cs">
+      <DependentUpon>ChatUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarios\ChatUsuario.aspx.designer.cs">
+      <DependentUpon>ChatUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="usuarios\CrearIncidencia.aspx.cs">
       <DependentUpon>CrearIncidencia.aspx</DependentUpon>

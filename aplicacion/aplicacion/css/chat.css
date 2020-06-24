@@ -1,0 +1,142 @@
+﻿html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 867px;
+    margin: 25px 10px;
+    height: calc(100% - 50px);
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    background: #eee;
+    color: #666;
+}
+
+.chat-main {
+    flex: 1;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+    .chat-main::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .chat-main::-webkit-scrollbar-track {
+        background: #ddd;
+    }
+
+    .chat-main::-webkit-scrollbar-thumb {
+        background: #bdbdbd;
+    }
+
+.men {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+    .men:last-of-type {
+        margin: 0;
+    }
+
+.men-contenedor {
+    max-width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ececec;
+}
+
+.men-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.men-info-nombre {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.men-info-tiempo {
+    font-size: 0.85em;
+}
+
+.left-men .men-contenedor {
+    border-bottom-left-radius: 0;
+}
+
+.right-men {
+    flex-direction: row-reverse;
+}
+
+    .right-men .men-contenedor {
+        background-color: #579ffb;
+        color: #fff;
+        border-bottom-right-radius: 0;
+    }
+
+    .right-men .msg-img {
+        margin: 0 0 0 10px;
+    }
+
+.men-inputarea {
+    display: flex;
+    padding: 10px;
+    border-top: 2px solid #ddd;
+    background: #eee;
+}
+
+    .men-inputarea * {
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+    }
+
+.men-input {
+    flex: 1;
+    background: #ddd;
+}
+
+.men-send-btn {
+    margin-left: 10px;
+    background: rgb(0, 196, 65);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.23s;
+}
+
+    .men-send-btn:hover {
+        background: rgb(0, 180, 50);
+    }
