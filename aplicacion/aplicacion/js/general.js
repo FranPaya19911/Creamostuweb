@@ -54,12 +54,16 @@ function AbajoArriba() {
 }
 
 
-function conector(id) {
-    PageMethods.docall(id, onSuccess, onFailure);
+function conector(nombre, ids) {
+    PageMethods.docall(nombre, ids, onSuccess, onFailure);
+    document.getElementById("nombreusuario").innerHTML = nombre;
+    var cambiar = document.getElementById("idusu");
+    cambiar.value = ids;
 }
 
 function onSuccess(result) {
-
+    document.getElementById("divu").innerHTML = result;
+    AbajoArriba();
 }
 
 

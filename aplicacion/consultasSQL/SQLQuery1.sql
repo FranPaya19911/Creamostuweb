@@ -38,13 +38,16 @@
  --  ALTER COLUMN Pass  NVARCHAR (50) COLLATE Latin1_General_CS_AS
 
 
--- select COUNT(@@ROWCOUNT) from MENSAJES WHERE FkUsuario = 2
+select COUNT(@@ROWCOUNT) from MENSAJES WHERE FkUsuario = 2
 -- select m.NumeroDelChat, m.Mensaje, m.Fecha, m.FkUsuario, u.Nombre from MENSAJES as m inner join USUARIOS as u on m.FkUsuario = u.UsuarioId where m.NumeroDelChat = 1
  --select * from USUARIOS
 
- select m.NumeroDelChat, m.Mensaje, m.Fecha, m.FkUsuario, u.Nombre from MENSAJES as m inner join USUARIOS as u on m.FkUsuario = u.UsuarioId where m.NumeroDelChat = 2
+ --select m.NumeroDelChat, m.Mensaje, m.Fecha, m.FkUsuario, u.Nombre from MENSAJES as m inner join USUARIOS as u on m.FkUsuario = u.UsuarioId where m.NumeroDelChat = 2
 
- select m.NumeroDelChat, m.Mensaje, m.Fecha, m.FkUsuario, u.Nombre from MENSAJES as m inner join USUARIOS as u on m.FkUsuario = u.UsuarioId where m.NumeroDelChat = 2
+ --select m.NumeroDelChat, m.Mensaje, m.Fecha, m.FkUsuario  from MENSAJES as m inner join USUARIOS as u on m.FkUsuario = u.UsuarioId where m.NumeroDelChat = 2
 
- select COUNT(@@ROWCOUNT)  from USUARIOS 
- select * from USUARIOS
+ --select COUNT(@@ROWCOUNT)  from USUARIOS 
+ --select * from USUARIOS
+ select COUNT(@@ROWCOUNT) from MENSAJES as m where m.FkUsuario = 6
+
+ select *from USUARIOS as u where u.UsuarioId = 6

@@ -25,51 +25,19 @@
             <div id="listaclientes" runat="server">
 
             </div>
-            <div class="usuario">
-                <input type="button" id="Button2" runat="server" value="carlos" onclick="conector('ja')"  />
-            </div>
-            <hr />
         </div>
         <section class="chat">
             <div class="chat-header">
-                <div>
+                <div id="nombreusuario">
                     "Nombre usuario"
                 </div>
             </div>
-            <main id="divu" class="chat-main">
-                <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
-                </asp:ScriptManager>
-                <%--visitante
-                    <div class="men left-men">
-                    <div class="men-contenedor">
-                        <div class="men-info">
-                            <div class="men-info-nombre">BOT</div>
-                            <div class="men-info-tiempo">12:45</div>
-                        </div>
-
-                        <div class="men-texto">
-                            Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
-                        </div>
-                    </div>
-                </div>--%>
-
-                <%--local
-                    <div class="men right-men">
-                    <div class="men-contenedor">
-                        <div class="men-info">
-                            <div class="men-info-nombre">Sajad</div>
-                            <div class="men-info-tiempo">12:46</div>
-                        </div>
-
-                        <div class="men-texto">
-                            You can change your name in JS section!
-                        </div>
-                    </div>
-                </div>--%>
-                
+            <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+            <input type="text" style="display:none" id="idusu" runat="server" value="0" />
+            <main id="divu" class="chat-main">   
             </main>
             <div class="men-inputarea"  runat="server">
-                <input type="text" class="men-input" placeholder="Escriba su mensaje..." required="required" />
+                <input id="mensaje" type="text" class="men-input" placeholder="Escriba su mensaje..." required="required" runat="server" />
                 <asp:Button ID="Button1" class="men-send-btn" runat="server" Text="Enviar" OnClick="Button1_Click" />
             </div>
         </section>
