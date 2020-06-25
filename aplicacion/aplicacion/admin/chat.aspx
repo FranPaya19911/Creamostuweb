@@ -26,7 +26,7 @@
 
             </div>
             <div class="usuario">
-                <input type="button" id="Button2" runat="server" value="carlos" onclick="btnAccept_onclic('ja')"  />
+                <input type="button" id="Button2" runat="server" value="carlos" onclick="conector('ja')"  />
             </div>
             <hr />
         </div>
@@ -69,7 +69,7 @@
                 
             </main>
             <div class="men-inputarea"  runat="server">
-                <input type="text" class="men-input" placeholder="Escriba su mensaje..." />
+                <input type="text" class="men-input" placeholder="Escriba su mensaje..." required="required" />
                 <asp:Button ID="Button1" class="men-send-btn" runat="server" Text="Enviar" OnClick="Button1_Click" />
             </div>
         </section>
@@ -81,18 +81,3 @@
 </body>
 </html>
 <script src="../js/general.js"></script>
-<script type="text/javascript">
-    function btnAccept_onclic(id) {
-        PageMethods.docall(id,onSuccess, onFailure);
-    }
-
-    function onSuccess(result) {
-        
-    }
-
-
-    function onFailure(error) {
-        alert(error);
-    }
-
-</script>

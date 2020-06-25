@@ -16,7 +16,7 @@ namespace aplicacion.admin
         {
             string texto ="<div class='usuario'>";
             string hola = "jajajaj";
-            texto += "<input type='button' id='Button2' runat='server' value='carlos' onclick='btnAccept_onclic(" +'"'+ hola + '"' + ")' />";
+            texto += "<input type='button' id='Button2' runat='server' value='carlos' onclick='conector(" + '"'+ hola + '"' + ")' />";
             texto += "</div>";
             texto += "<hr />";
             listaclientes.InnerHtml= texto;

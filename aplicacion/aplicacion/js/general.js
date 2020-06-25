@@ -52,3 +52,17 @@ function AbajoArriba() {
     var objDiv = document.getElementById("divu");
     objDiv.scrollTop = objDiv.scrollHeight;
 }
+
+
+function conector(id) {
+    PageMethods.docall(id, onSuccess, onFailure);
+}
+
+function onSuccess(result) {
+
+}
+
+
+function onFailure(error) {
+    alert(error);
+}

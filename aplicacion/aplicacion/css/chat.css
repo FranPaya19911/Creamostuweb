@@ -164,3 +164,8 @@
 .men-send-btn:hover {
     background: rgb(0, 180, 50);
 }
+
+input[type=button]{
+    text-align:left;
+    background-color:#fff;
+}

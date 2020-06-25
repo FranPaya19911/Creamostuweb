@@ -43,3 +43,8 @@
  --select * from USUARIOS
 
  select m.NumeroDelChat, m.Mensaje, m.Fecha, m.FkUsuario, u.Nombre from MENSAJES as m inner join USUARIOS as u on m.FkUsuario = u.UsuarioId where m.NumeroDelChat = 2
+
+ select m.NumeroDelChat, m.Mensaje, m.Fecha, m.FkUsuario, u.Nombre from MENSAJES as m inner join USUARIOS as u on m.FkUsuario = u.UsuarioId where m.NumeroDelChat = 2
+
+ select COUNT(@@ROWCOUNT)  from USUARIOS 
+ select * from USUARIOS

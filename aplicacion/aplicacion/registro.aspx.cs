@@ -40,7 +40,7 @@ namespace aplicacion
             SqlConnection conexion = new SqlConnection(BDconexion);
 
             string strComandoSqlConsulta = "Select u.Correo from dbo.USUARIOS as u where u.Correo = '" + cor + "'";
-            string strComandoSqlInsercion = "INSERT USUARIOS" + "(Nombre,Correo,Password,Foto,TipoDeUsuario,Activo) VALUES (" + "'" + nom + "','" + cor + "','" + pas + "','" + null + "','Usuario','True');";
+            string strComandoSqlInsercion = "INSERT USUARIOS" + "(Nombre,Correo,Pass,Foto,TipoDeUsuario,Activo) VALUES (" + "'" + nom + "','" + cor + "','" + pas + "','" + null + "','Usuario','True');";
             string strComandoSqlId = "Select UsuarioId from dbo.USUARIOS where Correo = '" + cor + "'";
 
             try
@@ -76,13 +76,11 @@ namespace aplicacion
                         id = Convert.ToInt32(comando.ExecuteScalar());
 
                     }
-                    catch
+                    catch 
                     {
                         HttpContext.Current.Response.Redirect(url);
                     }
                 }
-
-
             }
             catch
             {
